@@ -2,21 +2,18 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
+    <title>Companys</title>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 
-    <!-- <link rel="stylesheet" href="/BootstrapSiteYapimi/css/style.css" /> -->
+    <link href="css/style.css" rel="stylesheet" />
 
     <!-- Yazı stili fontunu buraya yapıştırdık...Montserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
     <style>
         .resimSlider {
@@ -286,56 +283,50 @@
     </style>
     <script src="https://kit.fontawesome.com/e2ae435918.js" crossorigin="anonymous"></script>
 
-    <title> MOCA | Stone </title>
 </head>
-<script src="fslightbox.min.js"></script>
 
 <body>
     <!-- Menü Kısmı Başlangıç-->
     <!-- navbar-light bg-light olan yeri navbar-dark bg-dark olarak yeniledik-->
     <!-- navbar-dark bg-dark yanına da fixed-top eklersek sticky sabit olur-->
-
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark bgblue fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bgblue fixed-top">
         <div class="container-fluid">
-            <!-- Brand -->
             <a class="navbar-brand" href="#">
                 <img src="img/dag iconu.png" alt="" width="30" height="24" class="d-inline-block align-text-top"> MOCA Stone | Taş Yerinde Ağırdır !
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+            <!-- 54. satır da collapse nin yanına "justify-content-center" yazıp menüyü ortaya yasladık-->
             <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-                <!-- Links -->
+                <!-- href lerdeki # işaretinin yanına id ismi verdik.. menu hakkimizda Şirketlerimiz ürünnlerimiz iletisim-->
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="index.html">Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hakkimizda.html">About Us</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="hakkimizda.html">About Us</a>
-                    </li>
-
-                    <!-- Dropdown -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              Companys
-            </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="sirketlerimiz.html">Antalya Elmalı</a>
-                            <a class="dropdown-item" href="sirketlerimiz.html">Bursa Orhaneli</a>
-                            <a class="dropdown-item" href="sirketlerimiz.html">Bursa Karacabey</a>
-                        </div>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Companys
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="sirketlerimiz.html">Antalya Elmalı</a></li>
+                            <li><a class="dropdown-item" href="sirketlerimiz.html">Bursa Orhaneli</a></li>
+                            <li><a class="dropdown-item" href="sirketlerimiz.html">Bursa Karacabey</a></li>
+                        </ul>
                     </li>
-
-                    <!-- Dropdown -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              Quarries
-            </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="ocaklarimiz.html">Affumicato Ocağı</a>
-                            <a class="dropdown-item" href="ocaklarimiz.html">Afrodit Ocağı</a>
-                            <a class="dropdown-item" href="ocaklarimiz.html">Rosalia Ocağı</a>
-                        </div>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Quarries
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="ocaklarimiz.html">Affumicato Ocağı</a></li>
+                            <li><a class="dropdown-item" href="ocaklarimiz.html">Afrodit Ocağı</a></li>
+                            <li><a class="dropdown-item" href="ocaklarimiz.html">Rosalia Ocağı</a></li>
+                        </ul>
                     </li>
 
                     <li class="nav-item">
@@ -363,123 +354,10 @@
             </form>
 
         </div>
-    </nav> -->
-    </div>
     </nav>
-
-
-
-
 
     <!-- Menü Kısmı Bitiş-->
 
-    <!-- Slider Başlangıç-->
-
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-
-        <!-- Resimleri ekledikten sonra büyüklük farkı oluştuğu için müdahale etme gerçekleştiriyor
-      bu yüzden resimSlider class ı ekleyerek style.css dosyasından düzenleme yaptık...
-      Tüm resimlerin boyutlarını 400px yapmış olduk...-->
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="img/r01.jpg" class="d-block w-100 resimSlider" alt="..." />
-            </div>
-            <div class="carousel-item">
-                <img src="img/r02.jpg" class="d-block w-100 resimSlider" alt="..." />
-            </div>
-            <div class="carousel-item">
-                <img src="img/r03.jpg" class="d-block w-100 resimSlider" alt="..." />
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-
-    <!-- Slider Bitiş-->
-
-    <!-- Hakkımızda Başlangıç-->
-
-    <!-- section ın yanına bunları ekledik sırasıyla class="p-5 text-center hakkimizda"
-    hakkimizda class ismi olarak yazılmış oldu...-->
-    <section class="p-5 text-center hakkimizda" id="hakkimizda">
-        <div class="container">
-            <!-- mb-5 Yazının altına boşluk bırakmak için mt-5 yazının üstüne boşluk bırakmak için kullanılır-->
-            <h2 class="mb-5 mt-5 font-weight-bold">About Us</h2>
-            <!--ayrac class ismi olarak eklendi...-->
-            <hr class="ayrac" />
-            <!-- leaf yani yaprak iconu ekledik fontawesome linkini de yukarı ekledik
-        igri class ismi olarak eklendi-->
-            <i class="fas fa-leaf igri"></i>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem maiores quibusdam error fugit, ad ea doloribus ipsa, quod possimus temporibus debitis provident? Laboriosam blanditiis ipsa tempore dolorum consequatur assumenda molestiae.
-            </p>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem maiores quibusdam error fugit, ad ea doloribus ipsa, quod possimus temporibus debitis provident? Laboriosam blanditiis ipsa tempore dolorum consequatur assumenda molestiae.
-            </p>
-        </div>
-    </section>
-
-    <!-- Hakkımızda Bitiş-->
-
-    <!-- Şirketlerimiz Başlangıç-->
-
-    <section class="p-5 text-center sirketlerimiz" id="sirketlerimiz">
-        <div class="container">
-            <!-- mb-5 Yazının altına boşluk bırakmak için mt-5 yazının üstüne boşluk bırakmak için kullanılır-->
-            <h2 class="mb-5 mt-5 font-weight-bold">Companys</h2>
-            <!--ayrac class ismi olarak eklendi...-->
-            <hr class="ayrac" />
-            <!-- leaf yani yaprak iconu ekledik fontawesome linkini de yukarı ekledik
-        ibeyaz class ismi olarak eklendi-->
-            <i class="fas fa-leaf ibeyaz"></i>
-            <i class="bi bi-gem"></i>
-
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="card shadow ekipCard">
-                        <img src="img/Antalya Elmalı.jpg" class="card-img-top" alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title">Antalya Elmalı</h5>
-                            <p class="card-text">Genel Müdürlük</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card shadow ekipCard">
-                        <img src="img/Bursa Orhaneli.jpg" class="card-img-top" alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title">Bursa Orhaneli</h5>
-                            <p class="card-text">Showroom</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card shadow ekipCard">
-                        <img src="img/Bursa Karacabey.jpg" class="card-img-top" alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title">Bursa Karacabey</h5>
-                            <p class="card-text">Showroom</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-    </section>
-    <!-- Şirketlerimiz Bitiş-->
 
     <!-- Ocaklarımız Başlangıç-->
 
@@ -489,7 +367,7 @@
             <h2 class="mb-5 mt-5 font-weight-bold">Quarries</h2>
             <hr class="ayrac" />
             <!-- leaf yani yaprak iconu ekledik font awesome linkini de yukarı ekledik-->
-            <i class="fas fa-leaf igri"></i>
+            <i class="fas fa-leaf ibeyaz"></i>
             <i class="bi bi-gem"></i>
 
             <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -518,194 +396,6 @@
             </div>
     </section>
     <!-- Ocaklarımız Bitiş-->
-
-    <!-- Ürünlerimiz Başlangıç-->
-
-    <section class="p-5 text-center urunlerimiz" id="urunlerimiz">
-        <div class="container">
-            <!-- mb-5 Yazının altına boşluk bırakmak için mt-5 yazının üstüne boşluk bırakmak için kullanılır-->
-            <h2 class="mb-5 mt-5 font-weight-bold">Products</h2>
-            <hr class="ayrac" />
-            <!-- leaf yani yaprak iconu ekledik fonat awesome linkini de yukarı ekledik-->
-            <i class="fas fa-leaf ibeyaz"></i>
-
-            <div class="row">
-                <div class="col-md-3">
-                    <figure class="figure">
-                        <img src="img/afrodit-500x500.jpg" class="figure-img img-fluid rounded shadow" alt="...">
-                        <a data-fslightbox="gallery" href="img/afrodit-500x500.jpg">
-                            Afrodit
-                            </a>
-                        </a>
-                    </figure>
-                </div>
-
-                <div class="col-md-3">
-                    <figure class="figure">
-                        <img src="img/affumicato-500x500.jpg" class="figure-img img-fluid rounded shadow" alt="...">
-                        <a data-fslightbox="gallery" href="img/affumicato-500x500.jpg">
-                          Affumicato
-                          </a>
-                    </figure>
-                </div>
-
-                <div class="col-md-3">
-                    <figure class="figure">
-                        <img src="img/agean-white-500x500.jpg" class="figure-img img-fluid rounded shadow" alt="...">
-                        <a data-fslightbox="gallery" href="img/agean-white-500x500.jpg">
-                        Agean White
-                        </a>
-                    </figure>
-                </div>
-
-                <div class="col-md-3">
-                    <figure class="figure">
-                        <img src="img/alnoir-500x500.jpg" class="figure-img img-fluid rounded shadow" alt="...">
-                        <a data-fslightbox="gallery" href="img/alnoir-500x500.jpg">
-                      Alnoir
-                      </a>
-                    </figure>
-                </div>
-
-                <div class="col-md-3">
-                    <figure class="figure">
-                        <img src="img/amazonia-500x500.jpg" class="figure-img img-fluid rounded shadow" alt="...">
-                        <a data-fslightbox="gallery" href="img/amazonia-500x500.jpg">
-                    Amazonia
-                    </a>
-                    </figure>
-                </div>
-
-                <div class="col-md-3">
-                    <figure class="figure">
-                        <img src="img/arabescato-500x500.jpg" class="figure-img img-fluid rounded shadow" alt="...">
-                        <a data-fslightbox="gallery" href="img/arabescato-500x500.jpg">
-                  Arabescato
-                  </a>
-                    </figure>
-                </div>
-
-                <div class="col-md-3">
-                    <figure class="figure">
-                        <img src="img/azul-bahia-500x500.jpg" class="figure-img img-fluid rounded shadow" alt="...">
-                        <a data-fslightbox="gallery" href="img/azul-bahia-500x500.jpg">
-                Azul Bahia
-                </a>
-                    </figure>
-                </div>
-
-                <div class="col-md-3">
-                    <figure class="figure">
-                        <img src="img/azul-macaubas-500x500.jpg" class="figure-img img-fluid rounded shadow" alt="...">
-                        <a data-fslightbox="gallery" href="img/azul-macaubas-500x500.jpg">
-              Azul Macaubas
-              </a>
-                    </figure>
-                </div>
-
-                <div class="col-md-3">
-                    <figure class="figure">
-                        <img src="img/bazalt-500x500.jpg" class="figure-img img-fluid rounded shadow" alt="...">
-                        <a data-fslightbox="gallery" href="img/bazalt-500x500.jpg">
-                  Bazalt
-                  </a>
-                    </figure>
-                </div>
-
-                <div class="col-md-3">
-                    <figure class="figure">
-                        <img src="img/belvedere-500x500.jpg" class="figure-img img-fluid rounded shadow" alt="...">
-                        <a data-fslightbox="gallery" href="img/belvedere-500x500.jpg">
-                Belvedere
-                </a>
-                    </figure>
-                </div>
-
-                <div class="col-md-3">
-                    <figure class="figure">
-                        <img src="img/bluette-500x500.jpg" class="figure-img img-fluid rounded shadow" alt="...">
-                        <a data-fslightbox="gallery" href="img/bluette-500x500.jpg">
-              Bluette
-              </a>
-                    </figure>
-                </div>
-
-                <div class="col-md-3">
-                    <figure class="figure">
-                        <img src="img/bottocino-500x500.jpg" class="figure-img img-fluid rounded shadow" alt="...">
-                        <a data-fslightbox="gallery" href="img/bottocino-500x500.jpg">
-            Bottocino
-            </a>
-                    </figure>
-                </div>
-
-
-            </div>
-        </div>
-        </div>
-    </section>
-
-    <!-- Ürünlerimiz Bitiş-->
-
-    <!-- İletişim Başlangıç-->
-
-    <section class="p-5 text-center iletisim" id="iletisim">
-        <div class="container">
-
-            <!-- mb-5 Yazının altına boşluk bırakmak için mt-5 yazının üstüne boşluk bırakmak için kullanılır-->
-            <h2 class="mb-5 mt-5 font-weight-bold">Contact</h2>
-            <hr class="ayrac" />
-            <!-- leaf yani yaprak iconu ekledik fontawesome linkini de yukarı ekledik-->
-            <i class="fas fa-leaf ibeyaz"></i>
-
-            <div class="row">
-                <div class="col-md-6">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3129.1768773689855!2d-98.20481768470718!3d38.34488797965961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5a46327f5709f75b!2zMzjCsDIwJzQxLjYiTiA5OMKwMTInMDkuNSJX!5e0!3m2!1str!2str!4v1638566571653!5m2!1str!2str"
-                        width="400" height="475" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-                <div class="col-md-6">
-                    <form>
-
-                        <div class="mb-3 row">
-                            <label for="inputPassword" class="col-sm-2 col-form-label">Ad </label>
-                            <div class="col-sm-9">
-                                <input type="text" name="text" id="" class="form-control" required="" data-error="Please enter your email" placeholder="Adınızı giriniz" />
-                            </div>
-                        </div>
-
-                        <div class="mb-3 row">
-                            <label for="inputPassword" class="col-sm-2 col-form-label">Soyad </label>
-                            <div class="col-sm-9">
-                                <input type="text" name="text" id="" class="form-control" required="" data-error="Please enter your email" placeholder="Soyadınızı giriniz" />
-                            </div>
-                        </div>
-
-                        <div class="mb-3 row">
-                            <label for="inputPassword" class="col-sm-2 col-form-label">Email </label>
-                            <div class="col-sm-9">
-                                <input type="email" name="email" id="email" class="form-control" required="" data-error="Please enter your email" placeholder="Email*" />
-                            </div>
-                        </div>
-
-                        <div class="mb-3 row">
-                            <label for="inputPassword" class="col-sm-2 col-form-label">Mesajınız </label>
-                            <div class="col-sm-9">
-                                <textarea name="" id="" class="form-control" required="" data-error="Please enter your email" placeholder="Mesajınızı Yazınız..." cols="30" rows="10" class="form-control col-md-8"></textarea>
-
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <button type="submit" class="col-md-3 btn btn-info"><b>GÖNDER</b></button>
-                        </div>
-                </div>
-                </form>
-            </div>
-        </div>
-        </div>
-    </section>
-
-    <!-- İletişim Bitiş-->
 
     <!-- Footer Başlangıç-->
 
@@ -829,7 +519,6 @@
         </div>
     </footer>
 
-
     <!-- Footer Bitiş-->
 
     <!-- Optional JavaScript; choose one of the two! -->
@@ -837,23 +526,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="fslightbox.js"></script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
 </body>
 
 </html>
-
-
-<!-- Create links 
-            <a data-fslightbox="gallery" href="https://i.imgur.com/fsyrScY.jpg">
-  Image
-  </a>
-            <a data-fslightbox="gallery" href="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
-  Video
-  </a>
-            <a data-fslightbox="gallery" href="https://www.youtube.com/watch?v=3nQNiWdeH2Q">
-  Youtube
-  </a>
--->
-
-<!-- Add the library - only one file -->
