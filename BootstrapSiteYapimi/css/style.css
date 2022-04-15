@@ -1,3 +1,15 @@
+.navbar .collapse .navbar-nav {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 477px) {
+    .navbar .collapse .navbar-nav {
+        flex-direction: column;
+    }
+}
+
 .resimSlider {
     height: 400px;
 }
@@ -18,8 +30,17 @@ body {
     font-style: normal;
 }
 
-.hakkimizda {
+.sirketlerimiz {
     background-color: #f2f2f2;
+}
+
+.urunlerimiz {
+    background-color: #f2f2f2;
+}
+
+.iletisim .card-body {
+    border-radius: 3px;
+    border-color: white;
 }
 
 .ayrac {
@@ -59,29 +80,14 @@ body {
     opacity: 0.8;
 }
 
+
+/***** FOOTER *****/
+
 .footer-bg {
     background: #303133;
     position: relative;
     padding-top: 100px;
     padding-bottom: 10px;
-}
-
-.home-footer-circle-item {
-    position: absolute;
-    top: 100%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
-.home-footer-circle-item:nth-child(1) {
-    left: 0;
-    top: 0;
-    -webkit-transform: translateY(-36%);
-    transform: translateY(-36%);
-}
-
-.home-footer-circle-item img {
-    max-width: 500px;
 }
 
 .footer-content-item {
@@ -112,12 +118,6 @@ body {
 
 .footer-content-list {
     padding-left: 30px;
-}
-
-.footer-content-title h3 {
-    font-size: 20px;
-    font-weight: 400;
-    color: #fff;
 }
 
 .footer-list li {
@@ -244,7 +244,7 @@ body {
     color: #fff;
 }
 
-.social-btn.social-btn-pin a {
+.social-btn.social-btn-gog a {
     background: red;
     color: #fff;
 }

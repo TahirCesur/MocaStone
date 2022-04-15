@@ -2,20 +2,37 @@
 <html lang="en">
 
 <head>
-    <title>Products</title>
-    <meta charset="UTF-8" />
+    <!-- Required meta tags -->
+    <title>Product</title>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 
-    <link href="css/style.css" rel="stylesheet" />
+    <script src="fslightbox.min.js"></script>
+    <link rel="stylesheet" href="/BootstrapSiteYapimi/css/style.css" />
 
     <!-- Yazı stili fontunu buraya yapıştırdık...Montserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
     <style>
+        .navbar .collapse .navbar-nav {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        @media (max-width: 477px) {
+            .navbar .collapse .navbar-nav {
+                flex-direction: column;
+            }
+        }
+        
         .resimSlider {
             height: 400px;
         }
@@ -36,15 +53,11 @@
             font-style: normal;
         }
         
-        .hakkimizda {
+        .sirketlerimiz {
             background-color: #f2f2f2;
         }
         
-        .ocaklarimiz {
-            background-color: #f2f2f2;
-        }
-        
-        .iletisim {
+        .urunlerimiz {
             background-color: #f2f2f2;
         }
         
@@ -84,30 +97,13 @@
         .figure:hover {
             opacity: 0.8;
         }
+        /***** FOOTER *****/
         
         .footer-bg {
             background: #303133;
             position: relative;
             padding-top: 100px;
             padding-bottom: 10px;
-        }
-        
-        .home-footer-circle-item {
-            position: absolute;
-            top: 100%;
-            -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-        }
-        
-        .home-footer-circle-item:nth-child(1) {
-            left: 0;
-            top: 0;
-            -webkit-transform: translateY(-36%);
-            transform: translateY(-36%);
-        }
-        
-        .home-footer-circle-item img {
-            max-width: 500px;
         }
         
         .footer-content-item {
@@ -138,12 +134,6 @@
         
         .footer-content-list {
             padding-left: 30px;
-        }
-        
-        .footer-content-title h3 {
-            font-size: 20px;
-            font-weight: 400;
-            color: #fff;
         }
         
         .footer-list li {
@@ -270,7 +260,7 @@
             color: #fff;
         }
         
-        .social-btn.social-btn-pin a {
+        .social-btn.social-btn-gog a {
             background: red;
             color: #fff;
         }
@@ -289,78 +279,57 @@
             justify-content: center;
         }
     </style>
+
     <script src="https://kit.fontawesome.com/e2ae435918.js" crossorigin="anonymous"></script>
 
+    <title> MOCA | Stone </title>
 </head>
+
 
 <body>
     <!-- Menü Kısmı Başlangıç-->
     <!-- navbar-light bg-light olan yeri navbar-dark bg-dark olarak yeniledik-->
     <!-- navbar-dark bg-dark yanına da fixed-top eklersek sticky sabit olur-->
+
     <nav class="navbar navbar-expand-lg navbar-dark bgblue fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="img/dag iconu.png" alt="" width="30" height="24" class="d-inline-block align-text-top"> MOCA Stone
+                <img src="img/dag iconu.png" alt="" width="30" height="24" class="d-inline-block align-text-top"> MOCA Stone | Taştaki Uzmanlığın Adresi...!
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-            <!-- 54. satır da collapse nin yanına "justify-content-center" yazıp menüyü ortaya yasladık-->
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- 328. satır da collapse nin yanına "justify-content-center" yazıp menüyü ortaya yasladık-->
             <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
                 <!-- href lerdeki # işaretinin yanına id ismi verdik.. menu hakkimizda Şirketlerimiz ürünnlerimiz iletisim-->
                 <ul class="navbar-nav">
+
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="hakkimizda.html">About Us</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Companys
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="sirketlerimiz.html">Antalya Elmalı</a></li>
-                            <li><a class="dropdown-item" href="sirketlerimiz.html">Bursa Orhaneli</a></li>
-                            <li><a class="dropdown-item" href="sirketlerimiz.html">Bursa Karacabey</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Quarries
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="ocaklarimiz.html">Affumicato Ocağı</a></li>
-                            <li><a class="dropdown-item" href="ocaklarimiz.html">Afrodit Ocağı</a></li>
-                            <li><a class="dropdown-item" href="ocaklarimiz.html">Rosalia Ocağı</a></li>
-                        </ul>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="urunlerimiz.html">Product</a>
+                        <a class="nav-link" href="hakkimizda.html">About Us</a>
                     </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="sirketlerimiz.html">Companys</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="ocaklarimiz.html">Quarries</a>
+                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="iletisim.html">Contact</a>
                     </li>
+
                 </ul>
             </div>
-            <!--
-          <form class="bd-search position-relative me-auto">
-            <span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;">
-              <input type="search" class="form-control ds-input" id="search-input" placeholder="Search docs..." aria-label="Search docs for..." autocomplete="off" data-bd-docs-version="5.0" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top;">
-              <span class="ds-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-0" style="position: absolute; top: 100%; z-index: 100; left: 0px; right: auto; display: none;">
-                <div class="ds-dataset-1"></div>
-              </span>
-            </span>
-          </form>
-          -->
-
             <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-info" type="submit">Search</button>
             </form>
-
         </div>
     </nav>
 
@@ -371,10 +340,10 @@
     <section class="p-5 text-center urunlerimiz" id="urunlerimiz">
         <div class="container">
             <!-- mb-5 Yazının altına boşluk bırakmak için mt-5 yazının üstüne boşluk bırakmak için kullanılır-->
-            <h2 class="mb-5 mt-5 font-weight-bold">Product</h2>
+            <h2 class="mb-5 mt-5 font-weight-bold">Products</h2>
             <hr class="ayrac" />
             <!-- leaf yani yaprak iconu ekledik fonat awesome linkini de yukarı ekledik-->
-            <i class="fas fa-leaf ibeyaz"></i>
+            <i class="fas fa-leaf igri"></i>
 
             <div class="row">
                 <div class="col-md-3">
@@ -418,8 +387,8 @@
                     <figure class="figure">
                         <img src="img/amazonia-500x500.jpg" class="figure-img img-fluid rounded shadow" alt="...">
                         <a data-fslightbox="gallery" href="img/amazonia-500x500.jpg">
-                    Amazonia
-                    </a>
+                        Amazonia
+                        </a>
                     </figure>
                 </div>
 
@@ -427,8 +396,8 @@
                     <figure class="figure">
                         <img src="img/arabescato-500x500.jpg" class="figure-img img-fluid rounded shadow" alt="...">
                         <a data-fslightbox="gallery" href="img/arabescato-500x500.jpg">
-                  Arabescato
-                  </a>
+                        Arabescato
+                        </a>
                     </figure>
                 </div>
 
@@ -436,8 +405,8 @@
                     <figure class="figure">
                         <img src="img/azul-bahia-500x500.jpg" class="figure-img img-fluid rounded shadow" alt="...">
                         <a data-fslightbox="gallery" href="img/azul-bahia-500x500.jpg">
-                Azul Bahia
-                </a>
+                        Azul Bahia
+                        </a>
                     </figure>
                 </div>
 
@@ -445,8 +414,8 @@
                     <figure class="figure">
                         <img src="img/azul-macaubas-500x500.jpg" class="figure-img img-fluid rounded shadow" alt="...">
                         <a data-fslightbox="gallery" href="img/azul-macaubas-500x500.jpg">
-              Azul Macaubas
-              </a>
+                        Azul Macaubas
+                        </a>
                     </figure>
                 </div>
 
@@ -454,8 +423,8 @@
                     <figure class="figure">
                         <img src="img/bazalt-500x500.jpg" class="figure-img img-fluid rounded shadow" alt="...">
                         <a data-fslightbox="gallery" href="img/bazalt-500x500.jpg">
-                  Bazalt
-                  </a>
+                        Bazalt
+                        </a>
                     </figure>
                 </div>
 
@@ -463,8 +432,8 @@
                     <figure class="figure">
                         <img src="img/belvedere-500x500.jpg" class="figure-img img-fluid rounded shadow" alt="...">
                         <a data-fslightbox="gallery" href="img/belvedere-500x500.jpg">
-                Belvedere
-                </a>
+                        Belvedere
+                        </a>
                     </figure>
                 </div>
 
@@ -472,8 +441,8 @@
                     <figure class="figure">
                         <img src="img/bluette-500x500.jpg" class="figure-img img-fluid rounded shadow" alt="...">
                         <a data-fslightbox="gallery" href="img/bluette-500x500.jpg">
-              Bluette
-              </a>
+                        Bluette
+                        </a>
                     </figure>
                 </div>
 
@@ -481,14 +450,12 @@
                     <figure class="figure">
                         <img src="img/bottocino-500x500.jpg" class="figure-img img-fluid rounded shadow" alt="...">
                         <a data-fslightbox="gallery" href="img/bottocino-500x500.jpg">
-            Bottocino
-            </a>
+                        Bottocino
+                        </a>
                     </figure>
                 </div>
 
-
             </div>
-        </div>
         </div>
     </section>
 
@@ -506,8 +473,8 @@
                             <div class="footer-details">
                                 <div class="footer-logo">
                                     <!-- <link >
-                        <img src="img/dag iconu.png" alt="logo" />
-                      </link> -->
+                                        <img src="img/dag iconu.png" alt="logo" />
+                                        </link> -->
                                 </div>
                                 <ul class="footer-details footer-list">
                                     <h3>MOCA Stone</h3>
@@ -549,21 +516,21 @@
                                 <li>
                                     Message:
                                     <span>
-                        <a href="/cdn-cgi/l/email-protection#96fff8f0f9d6f7fafff7b8f5f9fb">
-                          <span
-                            class="__cf_email__"
-                            data-cfemail="224b4c444d62434e4b430c414d4f"
-                          >
-                            [email&#160;protected]
-                          </span>
+                            <a href="/cdn-cgi/l/email-protection#96fff8f0f9d6f7fafff7b8f5f9fb">
+                              <span
+                                class="__cf_email__"
+                                data-cfemail="224b4c444d62434e4b430c414d4f"
+                              >
+                                [email&#160;protected]
+                              </span>
                                     </a>
                                     </span>
                                 </li>
                                 <li>
                                     Phone:
                                     <span>
-                        <a href="tel:(+00)67834598">(+00) 678 345 98</a>
-                      </span>
+                            <a href="tel:(+00)67834598">(+00) 678 345 98</a>
+                          </span>
                                 </li>
                                 <li>
                                     Faq: <span>+(456) 332-897-234</span>
@@ -575,6 +542,7 @@
             </div>
 
             <div class="footer-lower">
+
                 <div class="footer-lower-item footer-copyright-text">
                     <p>
                         Tüm Hakları Saklıdır | MOCA Stone ©2022
@@ -583,6 +551,7 @@
                         </a>
                     </p>
                 </div>
+
                 <div class="footer-lower-item footer-social-logo">
                     <ul class="footer-social-list">
                         <li class="social-btn social-btn-fb">
@@ -600,7 +569,7 @@
                                 <i class="fab fa-instagram"></i>
                             </a>
                         </li>
-                        <li class="social-btn social-btn-pin">
+                        <li class="social-btn social-btn-gog">
                             <a href="https://www.google.com.tr/?hl=tr" target="_blank">
                                 <i class="fab fa-google"></i>
                             </a>
@@ -612,6 +581,7 @@
                         </li>
                     </ul>
                 </div>
+
             </div>
         </div>
     </footer>
@@ -623,10 +593,23 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="fslightbox.js"></script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
 </body>
 
 </html>
+
+
+<!-- Create links 
+                <a data-fslightbox="gallery" href="https://i.imgur.com/fsyrScY.jpg">
+                Image
+                </a>
+                <a data-fslightbox="gallery" href="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+                Video
+                </a>
+                <a data-fslightbox="gallery" href="https://www.youtube.com/watch?v=3nQNiWdeH2Q">
+                Youtube
+                </a>
+    -->
+
+<!-- Add the library - only one file -->
