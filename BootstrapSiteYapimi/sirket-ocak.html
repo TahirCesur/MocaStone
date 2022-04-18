@@ -3,21 +3,19 @@
 
 <head>
     <!-- Required meta tags -->
-    <title>Companys</title>
+    <title>Contact</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 
-    <script src="fslightbox.min.js"></script>
-
     <link rel="stylesheet" href="/BootstrapSiteYapimi/css/style.css" />
 
     <!-- Yazı stili fontunu buraya yapıştırdık...Montserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
@@ -67,22 +65,6 @@
             border-top: 3px solid #23272b;
             max-width: 250px;
             margin: 25px auto;
-        }
-        
-        .hakkimizda .cizgi {
-            border: none;
-            border-top: 3px solid #ffffff;
-            max-width: 100%;
-            margin: auto;
-        }
-        
-        .hakkimizda .card {
-            height: 100%;
-            width: 100%;
-            background-color: #303133;
-            color: #ffffff;
-            border-radius: 15px 40px;
-            text-align: center;
         }
         
         .igri {
@@ -267,8 +249,8 @@
             color: #fff;
         }
         
-        .social-btn.social-btn-wc a {
-            background: #039139;
+        .social-btn.social-btn-tw a {
+            background: #55acee;
             color: #fff;
         }
         
@@ -295,203 +277,13 @@
         .form-group .btn {
             justify-content: center;
         }
-        
-        .iletisim .card-group {
-            border-radius: 3px;
-            border-color: white;
-        }
-        /******/
-        
-        .wrapper {
-            display: flex;
-        }
-        /* Sidebar menünün arka plan rengini değiştirdik. */
-        
-        #sidebar {
-            min-width: 250px;
-            max-width: 250px;
-            color: #fff;
-            background: #616263;
-            transition: all 0.3s;
-        }
-        /* Menüde bulunan Vihekasade yazısının arka plan rengini değiştirdik. */
-        
-        #sidebar .sidebar-header {
-            padding: 10px;
-            background: #6c757d
-        }
-        /* Menülere üstten-alttan 20 px değerinde padding verdik. */
-        
-        #sidebar ul.components {
-            padding: 20px 0;
-        }
-        /* Yan Menü yazısına 10 px değerinde padding değeri verdik. */
-        
-        #sidebar ul p {
-            padding: 10px;
-        }
-        /* Menülerin font boyutunu artırdık ve menülere 10 px değerinde padding verdik. */
-        
-        #sidebar ul li a {
-            text-decoration: none;
-            padding: 10px;
-            font-size: 1.1em;
-            display: block;
-            color: white;
-        }
-        /* Menülerin üzerinde gezindiğimizde arka plan rengini değiştirdik. */
-        
-        #sidebar ul li a:hover {
-            text-decoration: none;
-            color: #343a40 !important;
-            background: #f8f9fa;
-            transition: .3s all ease;
-        }
-        
-        #sidebar ul li.bg-secondary a:hover {
-            text-decoration: none;
-            color: #fff !important;
-            background: #343a40;
-            transition: .3s all ease;
-            border: 1px solid #f8f9fa;
-        }
-        /* Kredi menüsünün aktif menü olduğunu göstermek amacıyla arka plan rengini değiştirdik. Ayrıca sigorta menüsüne de tıkladığımızda arka plan rengini değiştirdik. */
-        
-        #sidebar ul li.active>a,
-        a[aria-expanded="true"] {
-            color: #fff;
-            background: #616263;
-        }
-        /* Alt menülerin rengini aktif olan menülerin rengi ile aynı yaptık. Ayrıca font boyutlarını küçültüp soldan 30 px değerinde padding verdik. */
-        
-        ul ul a {
-            font-size: 0.9em !important;
-            padding-left: 30px !important;
-            background: #616263;
-        }
-        /* #content id'sine 20 px değerinde padding verdik. */
-        
-        #content {
-            width: 100%;
-        }
-        /* Sayfa genişliği 768 px ve daha aşağı değerlerde olduğunda sidebar menüyü ve butonda bulunan yazıyı kaldırdık. */
-        
-        @media (max-width:768px) {
-            #sidebar {
-                margin-left: -250px;
-            }
-            #sidebar.active {
-                margin-left: 0;
-            }
-            #sidebarCollapse span {
-                display: none;
-            }
-        }
-        /*********************/
-        
-        .figure-img {
-            width: 100%;
-            height: 100%;
-        }
-        
-        .sidebar-container {
-            position: fixed;
-            width: 220px;
-            height: 100%;
-            left: 0;
-            overflow-x: hidden;
-            overflow-y: auto;
-            background: #1a1a1a;
-            color: #fff;
-        }
-        
-        .content-container {
-            padding-top: 20px;
-        }
-        
-        .sidebar-logo {
-            padding: 10px 15px 10px 30px;
-            font-size: 20px;
-            background-color: #2574A9;
-        }
-        
-        .sidebar-navigation {
-            padding: 0;
-            margin: 0;
-            list-style-type: none;
-            position: relative;
-        }
-        
-        .sidebar-navigation li {
-            background-color: transparent;
-            position: relative;
-            display: inline-block;
-            width: 100%;
-            line-height: 20px;
-        }
-        
-        .sidebar-navigation li a {
-            padding: 10px 15px 10px 30px;
-            display: block;
-            color: #fff;
-        }
-        
-        .sidebar-navigation li .fa {
-            margin-right: 10px;
-        }
-        
-        .sidebar-navigation li a:active,
-        .sidebar-navigation li a:hover,
-        .sidebar-navigation li a:focus {
-            text-decoration: none;
-            outline: none;
-        }
-        
-        .sidebar-navigation li::before {
-            background-color: #2574A9;
-            position: absolute;
-            content: '';
-            height: 100%;
-            left: 0;
-            top: 0;
-            -webkit-transition: width 0.2s ease-in;
-            transition: width 0.2s ease-in;
-            width: 3px;
-            z-index: -1;
-        }
-        
-        .sidebar-navigation li:hover::before {
-            width: 100%;
-        }
-        
-        .sidebar-navigation .header {
-            font-size: 12px;
-            background-color: #151515;
-            color: white;
-            padding: 10px 10px 10px 10px;
-        }
-        
-        .sidebar-header h5 {
-            font-size: 25px;
-            background-color: #151515;
-            color: white;
-            padding: 10px 10px 10px 10px;
-        }
-        
-        .sidebar-navigation .header::before {
-            background-color: transparent;
-        }
-        
-        .content-container {
-            padding-left: 200px;
-        }
     </style>
 
     <script src="https://kit.fontawesome.com/e2ae435918.js" crossorigin="anonymous"></script>
 
     <title> MOCA | Stone </title>
 </head>
-
+<script src="fslightbox.min.js"></script>
 
 <body>
     <!-- Menü Kısmı Başlangıç-->
@@ -501,11 +293,11 @@
     <nav class="navbar navbar-expand-lg navbar-dark bgblue fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="img/dag iconu.png" alt="" width="30" height="24" class="d-inline-block align-text-top"> MOCA Stone
+                <img src="img/dag iconu.png" alt="" width="30" height="24" class="d-inline-block align-text-top"> MOCA Stone | Taştaki Uzmanlığın Adresi...!
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
+            <span class="navbar-toggler-icon"></span>
+            </button>
             <!-- 328. satır da collapse nin yanına "justify-content-center" yazıp menüyü ortaya yasladık-->
             <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
                 <!-- href lerdeki # işaretinin yanına id ismi verdik.. menu hakkimizda Şirketlerimiz ürünnlerimiz iletisim-->
@@ -528,10 +320,6 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="urunlerimiz.html">Product</a>
-                    </li>
-
-                    <li class="nav-item">
                         <a class="nav-link" href="iletisim.html">Contact</a>
                     </li>
 
@@ -545,59 +333,41 @@
     </nav>
 
     <!-- Menü Kısmı Bitiş-->
-    <!-- Şirketlerimiz Başlangıç-->
 
-    <section class="p-5 text-center sirketlerimiz" id="sirketlerimiz">
-        <div class="container">
+    <!-- İletişim Başlangıç-->
 
-            <!-- mb-5 Yazının altına boşluk bırakmak için mt-5 yazının üstüne boşluk bırakmak için kullanılır-->
-            <h2 class="mb-5 mt-5 font-weight-bold">Companys</h2>
-            <!--ayrac class ismi olarak eklendi...-->
-            <hr class="ayrac" />
-            <!-- leaf yani yaprak iconu ekledik fontawesome linkini de yukarı ekledik ibeyaz class ismi olarak eklendi-->
-            <i class="fas fa-leaf igri"></i>
-            <i class="bi bi-gem"></i>
+    <div id="container">
+        <header>
+            <img id="headerResim" src="img/paolo-bendandi-z_o9OlT11cE-unsplash.jpg" alt="" />
+            <div id="centered">PAYLAŞTIKÇA</div>
+        </header>
+        <section>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html"><i class="fas fa-home"></i>Anasayfa</a>
+                    </li>
+                    <li>
+                        <a href="hakkimizda.html"><i class="fas fa-users"></i>Hakkımızda</a
+                >
+              </li>
+              <li>
+                <a href="referanslar.html"
+                  ><i class="fas fa-asterisk"></i>Referanslar</a
+                >
+              </li>
+              <li>
+                <a href="galeri.html"><i class="fas fa-images"></i>Galeri</a>
+                    </li>
+                    <li>
+                        <a href="iletisim.html"><i class="far fa-address-book"></i>İletişim</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <main>
 
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-
-                <div class="col">
-                    <div class="card shadow ekipCard">
-                        <img src="img/Antalya Elmalı.jpg" class="card-img-top" alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title">Antalya Elmalı</h5>
-                            <p class="card-text">Elmalı Madencilik İnş. Ltd. Şti.</p>
-                            <a href="ocaklarimiz.html" class="btn btn-dark">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card shadow ekipCard">
-                        <img src="img/Bursa Orhaneli.jpg" class="card-img-top" alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title">Bursa City Orhaneli</h5>
-                            <p class="card-text">Burç Madencilik Ltd. Şti.</p>
-                            <a href="ocaklarimiz.html" class="btn btn-dark">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card shadow ekipCard">
-                        <img src="img/Bursa Karacabey.jpg" class="card-img-top" alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title">Balıkesir White River</h5>
-                            <p class="card-text">Surkay Madencilik Ltd. Şti.</p>
-                            <a href="ocaklarimiz.html" class="btn btn-dark">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Şirketlerimiz Bitiş-->
+    <!-- İletişim Bitiş-->
 
     <!-- Footer Başlangıç-->
 
@@ -633,27 +403,27 @@
                                 <h3>Company</h3>
                                 <hr>
                                 <li><a href="index.html" style="text-decoration: none">Home</a></li>
-                                <li><a href="hakkimizda.html" style="text-decoration: none">About Us</a></li>
-                                <li><a href="sirketlerimiz.html" style="text-decoration: none">Companys</a></li>
-                                <li><a href="ocaklarimiz.html" style="text-decoration: none">Quarries</a></li>
-                                <li><a href="urunlerimiz.html" style="text-decoration: none">Products</a></li>
-                                <li><a href="iletisim.html" style="text-decoration: none">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                    <li><a href="hakkimizda.html" style="text-decoration: none">About Us</a></li>
+                    <li><a href="sirketlerimiz.html" style="text-decoration: none">Companys</a></li>
+                    <li><a href="ocaklarimiz.html" style="text-decoration: none">Quarries</a></li>
+                    <li><a href="urunlerimiz.html" style="text-decoration: none">Products</a></li>
+                    <li><a href="iletisim.html" style="text-decoration: none">Contact</a></li>
+                </ul>
+    </div>
+    </div>
 
-                    <div class="col-sm-6 col-md-4 col-lg-4">
-                        <div class="footer-content-list footer-content-item">
-                            <ul class="footer-details footer-list">
-                                <h3>Address</h3>
-                                <hr>
-                                <li>
-                                    Address:
-                                    <span>456 Labisto Parkways, CA, United States</span>
-                                </li>
-                                <li>
-                                    Message:
-                                    <span>
+    <div class="col-sm-6 col-md-4 col-lg-4">
+        <div class="footer-content-list footer-content-item">
+            <ul class="footer-details footer-list">
+                <h3>Address</h3>
+                <hr>
+                <li>
+                    Address:
+                    <span>456 Labisto Parkways, CA, United States</span>
+                </li>
+                <li>
+                    Message:
+                    <span>
                             <a href="/cdn-cgi/l/email-protection#96fff8f0f9d6f7fafff7b8f5f9fb">
                               <span
                                 class="__cf_email__"
@@ -661,67 +431,67 @@
                               >
                                 [email&#160;protected]
                               </span>
-                                    </a>
-                                    </span>
-                                </li>
-                                <li>
-                                    Phone:
-                                    <span>
+                    </a>
+                    </span>
+                </li>
+                <li>
+                    Phone:
+                    <span>
                             <a href="tel:(+00)67834598">(+00) 678 345 98</a>
                           </span>
-                                </li>
-                                <li>
-                                    Faq: <span>+(456) 332-897-234</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-lower">
-
-                <div class="footer-lower-item footer-copyright-text">
-                    <p>
-                        Tüm Hakları Saklıdır | MOCA Stone ©2022
-                        <a href="https://mocastone.com" target="_blank">
-                            <br></br>Moca Stone
-                        </a>
-                    </p>
-                </div>
-
-                <div class="footer-lower-item footer-social-logo">
-                    <ul class="footer-social-list">
-                        <li class="social-btn social-btn-fb">
-                            <a href="https://www.facebook.com/" target="_blank">
-                                <i class="fab fa-facebook"></i>
-                            </a>
-                        </li>
-                        <li class="social-btn social-btn-tw">
-                            <a href="https://twitter.com/?lang=tr" target="_blank">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="social-btn social-btn-ins">
-                            <a href="https://www.instagram.com/" target="_blank">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>
-                        <li class="social-btn social-btn-gog">
-                            <a href="https://www.google.com.tr/?hl=tr" target="_blank">
-                                <i class="fab fa-google"></i>
-                            </a>
-                        </li>
-                        <li class="social-btn social-btn-yt">
-                            <a href="https://www.youtube.com.tr/" target="_blank">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
+                </li>
+                <li>
+                    Faq: <span>+(456) 332-897-234</span>
+                </li>
+            </ul>
         </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="footer-lower">
+
+        <div class="footer-lower-item footer-copyright-text">
+            <p>
+                Tüm Hakları Saklıdır | MOCA Stone ©2022
+                <a href="https://mocastone.com" target="_blank">
+                    <br></br>Moca Stone
+                </a>
+            </p>
+        </div>
+
+        <div class="footer-lower-item footer-social-logo">
+            <ul class="footer-social-list">
+                <li class="social-btn social-btn-fb">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="social-btn social-btn-tw">
+                    <a href="https://twitter.com/?lang=tr" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="social-btn social-btn-ins">
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="social-btn social-btn-gog">
+                    <a href="https://www.google.com.tr/?hl=tr" target="_blank">
+                        <i class="fab fa-google"></i>
+                    </a>
+                </li>
+                <li class="social-btn social-btn-yt">
+                    <a href="https://www.youtube.com.tr/" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    </div>
     </footer>
 
     <!-- Footer Bitiş-->
