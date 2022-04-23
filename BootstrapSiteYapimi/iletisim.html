@@ -305,74 +305,12 @@
         .wrapper {
             display: flex;
         }
-        /* Sidebar menünün arka plan rengini değiştirdik. */
-        
-        #sidebar {
-            min-width: 250px;
-            max-width: 250px;
-            color: #fff;
-            background: #616263;
-            transition: all 0.3s;
-        }
-        /* Menüde bulunan Vihekasade yazısının arka plan rengini değiştirdik. */
-        
-        #sidebar .sidebar-header {
-            padding: 10px;
-            background: #6c757d
-        }
-        /* Menülere üstten-alttan 20 px değerinde padding verdik. */
-        
-        #sidebar ul.components {
-            padding: 20px 0;
-        }
-        /* Yan Menü yazısına 10 px değerinde padding değeri verdik. */
-        
-        #sidebar ul p {
-            padding: 10px;
-        }
-        /* Menülerin font boyutunu artırdık ve menülere 10 px değerinde padding verdik. */
-        
-        #sidebar ul li a {
-            text-decoration: none;
-            padding: 10px;
-            font-size: 1.1em;
-            display: block;
-            color: white;
-        }
-        /* Menülerin üzerinde gezindiğimizde arka plan rengini değiştirdik. */
-        
-        #sidebar ul li a:hover {
-            text-decoration: none;
-            color: #343a40 !important;
-            background: #f8f9fa;
-            transition: .3s all ease;
-        }
-        
-        #sidebar ul li.bg-secondary a:hover {
-            text-decoration: none;
-            color: #fff !important;
-            background: #343a40;
-            transition: .3s all ease;
-            border: 1px solid #f8f9fa;
-        }
         /* Kredi menüsünün aktif menü olduğunu göstermek amacıyla arka plan rengini değiştirdik. Ayrıca sigorta menüsüne de tıkladığımızda arka plan rengini değiştirdik. */
         
         #sidebar ul li.active>a,
         a[aria-expanded="true"] {
             color: #fff;
             background: #616263;
-        }
-        /* Alt menülerin rengini aktif olan menülerin rengi ile aynı yaptık. Ayrıca font boyutlarını küçültüp soldan 30 px değerinde padding verdik. */
-        
-        ul ul a {
-            font-size: 0.9em !important;
-            padding-left: 30px !important;
-            background: #616263;
-        }
-        /* #content id'sine 20 px değerinde padding verdik. */
-        
-        #content {
-            width: 100%;
         }
         /* Sayfa genişliği 768 px ve daha aşağı değerlerde olduğunda sidebar menüyü ve butonda bulunan yazıyı kaldırdık. */
         
@@ -394,40 +332,17 @@
             height: 100%;
         }
         
-        .sidebar-container {
-            position: fixed;
-            width: 220px;
-            height: 100%;
-            left: 0;
-            overflow-x: hidden;
-            overflow-y: auto;
-            background: #1a1a1a;
-            color: #fff;
-        }
-        
-        .content-container {
-            padding-top: 20px;
-        }
-        
-        .sidebar-logo {
-            padding: 10px 15px 10px 30px;
-            font-size: 20px;
-            background-color: #2574A9;
-        }
-        
         .sidebar-navigation {
             padding: 0;
             margin: 0;
-            list-style-type: none;
             position: relative;
         }
         
         .sidebar-navigation li {
-            background-color: transparent;
+            background-color: white;
             position: relative;
             display: inline-block;
             width: 100%;
-            line-height: 20px;
         }
         
         .sidebar-navigation li a {
@@ -436,32 +351,10 @@
             color: #fff;
         }
         
-        .sidebar-navigation li .fa {
-            margin-right: 10px;
-        }
-        
         .sidebar-navigation li a:active,
         .sidebar-navigation li a:hover,
         .sidebar-navigation li a:focus {
             text-decoration: none;
-            outline: none;
-        }
-        
-        .sidebar-navigation li::before {
-            background-color: #2574A9;
-            position: absolute;
-            content: '';
-            height: 100%;
-            left: 0;
-            top: 0;
-            -webkit-transition: width 0.2s ease-in;
-            transition: width 0.2s ease-in;
-            width: 3px;
-            z-index: -1;
-        }
-        
-        .sidebar-navigation li:hover::before {
-            width: 100%;
         }
         
         .sidebar-navigation .header {
@@ -476,10 +369,6 @@
             background-color: #151515;
             color: white;
             padding: 10px 10px 10px 10px;
-        }
-        
-        .sidebar-navigation .header::before {
-            background-color: transparent;
         }
         
         .content-container {
@@ -553,37 +442,37 @@
             <i class="fas fa-leaf ibeyaz"></i>
 
             <div class="row">
-                <div class="card-group">
-                    <div class="card border-white text-white bg-dark mb-3">
-                        <div class="card-body">
-                            <h4 class="card-header">Antalya Elmalı</h4>
-                            <hr>
-                            <p class="card-text">Elmalı Madencilik Ocakları -1 / 2 Yolu
-                                <p class="card-text"><small class="text-muted">Elmalı/ANTALYA</small></p>
-                        </div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3189.2001152666166!2d29.91047131529372!3d36.93338497992132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0!2zMzbCsDU2JzAwLjIiTiAyOcKwNTQnNDUuNiJF!5e0!3m2!1str!2str!4v1650570302223!5m2!1str!2str"
-                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="card border-white text-white bg-dark mb-3" style="width: 33%;">
+                    <div class="card-body">
+                        <h4 class="card-header">Antalya Elmalı</h4>
+                        <hr>
+                        <p class="card-text">Elmalı Madencilik Ocakları - 1 / 2 Yolu
+                            <p class="card-text"><small class="text-muted">Elmalı/ANTALYA</small></p>
                     </div>
-                    <div class="card border-white text-white bg-dark mb-3">
-                        <div class="card-body">
-                            <h4 class="card-header">Bursa City Orhaneli</h4>
-                            <hr>
-                            <p class="card-text">Burç Madencilik Bursa Orhaneli <br>Light Emperador Ocağı Yolu
-                                <p class="card-text"><small class="text-muted">Orhaneli/BURSA</small></p>
-                        </div class="border-white">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3053.651122107639!2d28.923415315385164!3d40.060885979408035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0!2zNDDCsDAzJzM5LjIiTiAyOMKwNTUnMzIuMiJF!5e0!3m2!1str!2str!4v1650570625648!5m2!1str!2str"
-                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3189.2001152666166!2d29.91047131529372!3d36.93338497992132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0!2zMzbCsDU2JzAwLjIiTiAyOcKwNTQnNDUuNiJF!5e0!3m2!1str!2str!4v1650570302223!5m2!1str!2str"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="card border-white text-white bg-dark mb-3" style="width: 33%;">
+                    <div class=" card-body ">
+                        <h4 class="card-header ">Bursa City Orhaneli</h4>
+                        <hr>
+                        <p class="card-text ">Burç Madencilik Bursa Orhaneli <br>Light Emperador Ocağı Yolu
+                            <p class="card-text "><small class="text-muted ">Orhaneli/BURSA</small></p>
+                    </div class="border-white ">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3053.651122107639!2d28.923415315385164!3d40.060885979408035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0!2zNDDCsDAzJzM5LjIiTiAyOMKwNTUnMzIuMiJF!5e0!3m2!1str!2str!4v1650570625648!5m2!1str!2str "
+                        width="100% " height="300 " style="border:0; " allowfullscreen=" " loading="lazy " referrerpolicy="no-referrer-when-downgrade "></iframe>
+                </div>
+
+                <div class="card border-white text-white bg-dark mb-3 " style="width: 33%;">
+                    <div class="card-body ">
+                        <h4 class="card-header ">Balıkesir White River</h4>
+                        <hr>
+                        <p class="card-text ">Sürkay Madencilik Balıkesir <br>White River Ocağı Yolu
+                            <p class="card-text "><small class="text-muted ">Susurluk/BALIKESİR</small></p>
                     </div>
-                    <div class="card border-white text-white bg-dark mb-3">
-                        <div class="card-body">
-                            <h4 class="card-header">Balıkesir White River</h4>
-                            <hr>
-                            <p class="card-text">Sürkay Madencilik Balıkesir <br>White River Ocağı Yolu
-                                <p class="card-text"><small class="text-muted">Susurluk/BALIKESİR</small></p>
-                        </div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3129.1768773689855!2d-98.20481768470718!3d38.34488797965961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5a46327f5709f75b!2zMzjCsDIwJzQxLjYiTiA5OMKwMTInMDkuNSJX!5e0!3m2!1str!2str!4v1638566571653!5m2!1str!2str"
-                            width="100%" height="300" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3129.1768773689855!2d-98.20481768470718!3d38.34488797965961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5a46327f5709f75b!2zMzjCsDIwJzQxLjYiTiA5OMKwMTInMDkuNSJX!5e0!3m2!1str!2str!4v1638566571653!5m2!1str!2str "
+                        width="100% " height="300 " allowfullscreen=" " loading="lazy "></iframe>
                 </div>
             </div>
         </div>
@@ -617,18 +506,17 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="footer-content-list footer-content-item">
+                    <div class="col-sm-6 col-md-4 col-lg-3 ">
+                        <div class="footer-content-list footer-content-item ">
 
-                            <ul class="footer-details footer-list">
+                            <ul class="footer-details footer-list ">
                                 <h3>Company</h3>
                                 <hr>
-                                <li><a href="index.html" style="text-decoration: none">Home</a></li>
-                                <li><a href="hakkimizda.html" style="text-decoration: none">About Us</a></li>
-                                <li><a href="sirketlerimiz.html" style="text-decoration: none">Companys</a></li>
-                                <li><a href="ocaklarimiz.html" style="text-decoration: none">Quarries</a></li>
-                                <li><a href="urunlerimiz.html" style="text-decoration: none">Product</a></li>
-                                <li><a href="iletisim.html" style="text-decoration: none">Contact</a></li>
+                                <li><a href="index.html " style="text-decoration: none ">Ana Sayfa</a></li>
+                                <li><a href="hakkimizda.html " style="text-decoration: none ">Hakkımızda</a></li>
+                                <li><a href="ocaklarimiz.html " style="text-decoration: none ">Ocaklarımız</a></li>
+                                <li><a href="urunlerimiz.html " style="text-decoration: none ">Ürünlerimiz</a></li>
+                                <li><a href="iletisim.html " style="text-decoration: none ">İletişim</a></li>
                             </ul>
                         </div>
                     </div>
@@ -645,21 +533,18 @@
                                 <li>
                                     Message:
                                     <span>
-                        <a href="/cdn-cgi/l/email-protection#96fff8f0f9d6f7fafff7b8f5f9fb">
-                          <span
-                            class="__cf_email__"
-                            data-cfemail="224b4c444d62434e4b430c414d4f"
-                          >
-                            bilgi@mocastone.com.tr
-                                                  </span>
+                                    <a href="/cdn-cgi/l/email-protection#96fff8f0f9d6f7fafff7b8f5f9fb">
+                                        <span class="__cf_email__" data-cfemail="224b4c444d62434e4b430c414d4f">
+                                        bilgi@mocastone.com.tr
+                                        </span>
                                     </a>
                                     </span>
                                 </li>
                                 <li>
                                     Phone:
                                     <span>
-                        <a href="tel:(+90)2242493435">(+90) 224 249 34 35</a>
-                      </span>
+                                      <a href="tel:(+90)2242493435">(+90) 224 249 34 35</a>
+                                    </span>
                                 </li>
                             </ul>
                         </div>
