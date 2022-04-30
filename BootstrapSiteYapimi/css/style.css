@@ -38,16 +38,27 @@ body {
     background-color: #f2f2f2;
 }
 
-.iletisim .card-body {
-    border-radius: 3px;
-    border-color: white;
-}
-
 .ayrac {
     border: none;
     border-top: 3px solid #23272b;
     max-width: 250px;
     margin: 25px auto;
+}
+
+.hakkimizda .cizgi {
+    border: none;
+    border-top: 3px solid #ffffff;
+    max-width: 100%;
+    margin: auto;
+}
+
+.hakkimizda .card {
+    height: 100%;
+    width: 100%;
+    background-color: #303133;
+    color: #ffffff;
+    border-radius: 15px 40px;
+    text-align: center;
 }
 
 .igri {
@@ -70,10 +81,6 @@ body {
 
 .ekipCard>img:hover {
     opacity: 0.8;
-}
-
-.galeri {
-    background-color: #f2f2f2;
 }
 
 .figure:hover {
@@ -234,8 +241,8 @@ body {
     color: #fff;
 }
 
-.social-btn.social-btn-tw a {
-    background: #55acee;
+.social-btn.social-btn-wc a {
+    background: #039139;
     color: #fff;
 }
 
@@ -261,4 +268,91 @@ body {
 
 .form-group .btn {
     justify-content: center;
+}
+
+.iletisim .card-group {
+    border-radius: 3px;
+    border-color: white;
+}
+
+
+/******/
+
+.wrapper {
+    display: flex;
+}
+
+
+/* Kredi menüsünün aktif menü olduğunu göstermek amacıyla arka plan rengini değiştirdik. Ayrıca sigorta menüsüne de tıkladığımızda arka plan rengini değiştirdik. */
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #616263;
+}
+
+
+/* Sayfa genişliği 768 px ve daha aşağı değerlerde olduğunda sidebar menüyü ve butonda bulunan yazıyı kaldırdık. */
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
+
+
+/*********************/
+
+.figure-img {
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar-navigation {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.sidebar-navigation li {
+    background-color: white;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.sidebar-navigation li a {
+    padding: 10px 15px 10px 30px;
+    display: block;
+    color: #fff;
+}
+
+.sidebar-navigation li a:hover {
+    text-decoration: none;
+    color: black;
+    background-color: blue;
+}
+
+.sidebar-navigation .header {
+    font-size: 12px;
+    background-color: #151515;
+    color: white;
+    padding: 10px 10px 10px 10px;
+}
+
+.sidebar-header h5 {
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    padding: 10px 10px 10px 10px;
+}
+
+.content-container {
+    padding-left: 200px;
 }
