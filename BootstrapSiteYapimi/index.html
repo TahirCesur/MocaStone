@@ -303,6 +303,13 @@
             border-radius: 3px;
             border: 3px solid black;
         }
+        
+        .ocaklarimiz a:hover {
+            background-color: white !important;
+            color: black !important;
+            font-size: 15px;
+            border-radius: 3px;
+        }
         /******/
         
         .wrapper {
@@ -537,15 +544,13 @@
 
         <div class="row">
             <div class="col-sm-3">
-                <div class="sidebar-header">
-                    <h5>Ocaklarımız</h5>
-                </div>
-                <ul class="sidebar-navigation">
-                    <div style="color:black ; background-color: white; border-color:#151515;" class="header">
-                        <h5>Antalya Elmalı</h5>
-                    </div>
-                    <li><a href="elmali-cosmos-beige.html" class="bg-dark">Elmalı Mermer Ocağı-1</a></li>
-                    <li><a href="elmali-cosmos-beige.html" class="bg-secondary">Cosmos Beige</a></li>
+                <div class="btn-group-vertical">
+                    <a class="dropdown-item bg-dark text-white p-3" href="#">
+                        <h4>Ocaklarımız</h4>
+                    </a>
+                    <a href="elmali-cosmos-beige.html" class="dropdown-item bg-dark text-white p-2">Elmalı Mermer Ocağı-1</a>
+                    <a href="elmali-cosmos-beige.html" class="dropdown-item bg-dark text-white p-2">Elmalı Mermer Ocağı-1</a>
+                    <a href="elmali-cosmos-beige.html" class="dropdown-item bg-dark text-white p-2">Cosmos Beige</a>
                     <li>
                         <a href="elmali-cloudy-beige.html" class="bg-secondary">Cloudy Beige</a>
                     </li>
@@ -576,14 +581,24 @@
                     <li>
                         <a href="white-river-soon.html" class="bg-secondary">White River</a>
                     </li>
-                </ul>
+                </div>
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-secondary">
+                          Dropdown
+                        </button>
+                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                        <a class="dropdown-item" href="#">Dropdown link</a>
+                        <a class="dropdown-item" href="#">Dropdown link</a>
+                    </div>
+                </div>
+
             </div>
 
 
             <div class="col-sm-9">
 
-                <div class="card-group cols-1">
-                    <div class="card border-white" style="width: 48%;">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col-md-6">
                         <figure class="figure">
                             <img src="img/Elmalı Cosmos Beige Blocks-1.jpg" class="figure-img img-fluid rounded shadow" alt="...">
                             <a data-fslightbox="gallery" href="img/Elmalı Cosmos Beige Blocks-1.jpg">
@@ -592,7 +607,7 @@
                         </figure>
                     </div>
 
-                    <div class="card border-white" style="width: 48%;">
+                    <div class="col-md-6">
                         <figure class="figure">
                             <img src="img/Elmalı Cosmos Beige Slabs-1.jpg" class="figure-img img-fluid rounded shadow" alt="...">
                             <a data-fslightbox="gallery" href="img/Elmalı Cosmos Beige Slabs-1.jpg">
@@ -604,99 +619,124 @@
 
                 <br>
                 <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col">
-                        <div class="card">
-                            <div class="card border-white" style="width: 100%;">
-                                <figure class="figure">
-                                    <img src="img/Elmalı Cosmos Beige Blocks-2.jpg" class="figure-img img-fluid rounded shadow" alt="...">
-                                    <a data-fslightbox="gallery" href="img/Elmalı Cosmos Beige Blocks-2.jpg">
-                                Cosmos Beige Blocks
+                    <div class="col-md-4">
+                        <figure class="figure">
+                            <img src="img/Elmalı Cosmos Beige Blocks-2.jpg" class="figure-img img-fluid rounded shadow" alt="...">
+                            <a data-fslightbox="gallery" href="img/Elmalı Cosmos Beige Blocks-2.jpg">
+                        Cosmos Beige Blocks
+                    </a>
+                        </figure>
+                    </div>
+
+                    <div class="col-md-4">
+                        <figure class="figure">
+                            <img src="img/Elmalı Cosmos Beige Blocks-33.jpg" class="figure-img img-fluid rounded shadow" alt="...">
+                            <a data-fslightbox="gallery" href="img/Elmalı Cosmos Beige Blocks-33.jpg">
+                        Cosmos Beige Blocks
+                    </a>
+                        </figure>
+                    </div>
+
+                    <div class="col-md-4">
+                        <figure class="figure">
+                            <img src="img/Elmalı Cosmos Beige Blocks-4.jpg" class="figure-img img-fluid rounded shadow" alt="...">
+                            <a data-fslightbox="gallery" href="img/Elmalı Cosmos Beige Blocks-4.jpg">
+                          Cosmos Beige Blocks
+                        </a>
+                        </figure>
+                    </div>
+
+                    <div class="col-md-4">
+                        <figure class="figure">
+                            <img src="img/Elmalı Cosmos Beige Blocks-5.jpg" class="figure-img img-fluid rounded shadow" alt="...">
+                            <a data-fslightbox="gallery" href="img/Elmalı Cosmos Beige Blocks-5.jpg">
+                          Cosmos Beige Blocks
+                        </a>
+                        </figure>
+                    </div>
+
+                    <div class="col-md-4">
+                        <figure class="figure">
+                            <img src="img/Elmalı Cosmos Beige Blocks-6.jpg" class="figure-img img-fluid rounded shadow" alt="...">
+                            <a data-fslightbox="gallery" href="img/Elmalı Cosmos Beige Blocks-6.jpg">
+                          Cosmos Beige Blocks
+                        </a>
+                        </figure>
+                    </div>
+
+                    <div class="col-md-4">
+                        <figure class="figure">
+                            <img src="img/Elmalı Cosmos Beige Blocks-7.jpg" class="figure-img img-fluid rounded shadow" alt="...">
+                            <a data-fslightbox="gallery" href="img/Elmalı Cosmos Beige Blocks-7.jpg">
+                          Cosmos Beige Blocks
+                        </a>
+                        </figure>
+                    </div>
+
+                    <div class="col-md-4">
+                        <figure class="figure">
+                            <img src="img/Elmalı Cosmos Beige Blocks-8.jpg" class="figure-img img-fluid rounded shadow" alt="...">
+                            <a data-fslightbox="gallery" href="img/Elmalı Cosmos Beige Blocks-8.jpg">
+                               Cosmos Beige Blocks
                             </a>
-                                </figure>
-                            </div>
-                        </div>
+                        </figure>
                     </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="card border-white" style="width: 100%;">
-                                <figure class="figure">
-                                    <img src="img/Elmalı Cosmos Beige Blocks-33.jpg" class="figure-img img-fluid rounded shadow" alt="...">
-                                    <a data-fslightbox="gallery" href="img/Elmalı Cosmos Beige Blocks-33.jpg">
-                                Cosmos Beige Blocks
+
+                    <div class="col-md-4">
+                        <figure class="figure">
+                            <img src="img/Elmalı Cosmos Beige Slabs-2.jpg" class="figure-img img-fluid rounded shadow" alt="...">
+                            <a data-fslightbox="gallery" href="img/Elmalı Cosmos Beige Slabs-2.jpg">
+                                Cosmos Beige Slabs
                             </a>
-                                </figure>
+                        </figure>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <div class="card border-white" style="width: 100%;">
+
                             </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card">
                             <div class="card border-white" style="width: 100%;">
-                                <figure class="figure">
-                                    <img src="img/Elmalı Cosmos Beige Blocks-4.jpg" class="figure-img img-fluid rounded shadow" alt="...">
-                                    <a data-fslightbox="gallery" href="img/Elmalı Cosmos Beige Blocks-4.jpg">
-                                  Cosmos Beige Blocks
-                                </a>
-                                </figure>
+
                             </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card">
                             <div class="card border-white" style="width: 100%;">
-                                <figure class="figure">
-                                    <img src="img/Elmalı Cosmos Beige Blocks-5.jpg" class="figure-img img-fluid rounded shadow" alt="...">
-                                    <a data-fslightbox="gallery" href="img/Elmalı Cosmos Beige Blocks-5.jpg">
-                                  Cosmos Beige Blocks
-                                </a>
-                                </figure>
+
                             </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card">
                             <div class="card border-white" style="width: 100%;">
-                                <figure class="figure">
-                                    <img src="img/Elmalı Cosmos Beige Blocks-6.jpg" class="figure-img img-fluid rounded shadow" alt="...">
-                                    <a data-fslightbox="gallery" href="img/Elmalı Cosmos Beige Blocks-6.jpg">
-                                  Cosmos Beige Blocks
-                                </a>
-                                </figure>
+
                             </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card">
                             <div class="card border-white" style="width: 100%;">
-                                <figure class="figure">
-                                    <img src="img/Elmalı Cosmos Beige Blocks-7.jpg" class="figure-img img-fluid rounded shadow" alt="...">
-                                    <a data-fslightbox="gallery" href="img/Elmalı Cosmos Beige Blocks-7.jpg">
-                                  Cosmos Beige Blocks
-                                </a>
-                                </figure>
+
                             </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card">
                             <div class="card border-white" style="width: 100%;">
-                                <figure class="figure">
-                                    <img src="img/Elmalı Cosmos Beige Blocks-8.jpg" class="figure-img img-fluid rounded shadow" alt="...">
-                                    <a data-fslightbox="gallery" href="img/Elmalı Cosmos Beige Blocks-8.jpg">
-                                       Cosmos Beige Blocks
-                                    </a>
-                                </figure>
+
                             </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card">
                             <div class="card border-white" style="width: 100%;">
-                                <figure class="figure">
-                                    <img src="img/Elmalı Cosmos Beige Slabs-2.jpg" class="figure-img img-fluid rounded shadow" alt="...">
-                                    <a data-fslightbox="gallery" href="img/Elmalı Cosmos Beige Slabs-2.jpg">
-                                        Cosmos Beige Slabs
-                                    </a>
-                                </figure>
+
                             </div>
                         </div>
                     </div>
