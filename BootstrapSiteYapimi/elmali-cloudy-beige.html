@@ -113,6 +113,10 @@
         .figure:hover {
             opacity: 0.8;
         }
+        
+        .card-header {
+            border-bottom: 1px solid #fbfbfb !important;
+        }
         /***** FOOTER *****/
         
         .footer-bg {
@@ -295,9 +299,16 @@
             justify-content: center;
         }
         
-        .iletisim .card-group {
+        .iletisim.card-group.card {
             border-radius: 3px;
-            border-color: white;
+            border: 3px solid black;
+        }
+        
+        .ocaklarimiz a:hover {
+            background-color: white !important;
+            color: black !important;
+            font-size: 15px;
+            border-radius: 3px;
         }
         /******/
         
@@ -374,7 +385,6 @@
             padding-left: 200px;
         }
     </style>
-
     <script src="https://kit.fontawesome.com/e2ae435918.js" crossorigin="anonymous"></script>
 
     <title> MOCA | Stone </title>
@@ -389,7 +399,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bgblue fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="img/dag iconu.png" alt="" width="30" height="24" class="d-inline-block align-text-top"> MOCA Stone
+                <img src="" alt="" width="0" height="0" class="d-inline-block align-text-top"> MOCA Stone
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -444,66 +454,51 @@
 
         <div class="row">
             <div class="col-sm-3">
-                <div class="sidebar-header">
-                    <h5>Ocaklarımız</h5>
+                <div class="btn-group-vertical">
+                    <h6 class="dropdown-item bg-dark text-white rounded-pill p-3" href="#">
+                        Antalya Elmalı-1</h6>
+
+                    <a href="elmali-cosmos-beige.html" class="dropdown-item bg-secondary text-white rounded-pill p-2 mb-1">Cosmos Beige</a>
+                    <a href="elmali-cloudy-beige.html" class="dropdown-item bg-secondary text-white rounded-pill p-2 mb-1">Cloudy Beige</a>
+                    <a href="elmali-baiyulan.html" class="dropdown-item bg-secondary text-white rounded-pill p-2 mb-1">Elmalı Baıyulan</a>
+
+                    <h6 class="dropdown-item bg-dark text-white rounded-pill p-3 mt-2" href="#">
+                        Antalya Elmalı-2</h6>
+
+                    <a href="elmali-crema-montana.html" class="dropdown-item bg-secondary text-white rounded-pill p-2 mb-1">Crema Montana Beige</a>
+                    <a href="elmali-letoon.html" class="dropdown-item bg-secondary text-white rounded-pill p-2 mb-1">Letoon Beige</a>
+                    <a href="elmali-shandian.html" class="dropdown-item bg-secondary text-white rounded-pill p-2 mb-1">Shandian Beige</a>
+
+                    <h6 class="dropdown-item bg-dark text-white rounded-pill p-3 mt-2" href="#">
+                        Bursa Orhaeli</h6>
+
+                    <a href="burc-cosmos-beige.html" class="dropdown-item bg-secondary text-white rounded-pill p-2 mb-1">Light Emperador</a>
+
+                    <h6 class="dropdown-item bg-dark text-white rounded-pill p-3 mt-2" href="#">
+                        Balıkesir White River</h6>
+
+                    <a href="white-river-soon.html" class="dropdown-item bg-secondary text-white rounded-pill p-2 mb-1">White River</a>
                 </div>
-                <ul class="sidebar-navigation">
-                    <div class="header">
-                        <h5>Antalya Elmalı</h5>
-                    </div>
-                    <li><a href="elmali-cosmos-beige.html" class="bg-dark">Elmalı Mermer Ocağı-1</a></li>
-                    <li><a href="elmali-cosmos-beige.html" class="bg-secondary">Cosmos Beige</a></li>
-                    <li>
-                        <a href="elmali-cloudy-beige.html" class="bg-secondary">Cloudy Beige</a>
-                    </li>
-                    <li>
-                        <a href="elmali-baiyulan.html" class="bg-secondary">Elmalı Baıyulan</a>
-                    </li>
-                    <li><a href="elmali-crema-montana.html" class="bg-dark">Elmalı Mermer Ocağı-2</a></li>
-                    <li>
-                        <a href="elmali-crema-montana.html" class="bg-secondary">Crema Montana Beige</a>
-                    </li>
-                    <li>
-                        <a href="elmali-letoon.html" class="bg-secondary">Letoon Beige</a>
-                    </li>
-                    <li>
-                        <a href="elmali-shandian.html" class="bg-secondary">Shandian Beige</a>
-                    </li><br>
-                    <div class="header">
-                        <h5>Bursa Orhaneli</h5>
-                    </div>
-                    <li><a href="burc-cosmos-beige.html" class="bg-dark">Burç Light Emperador Ocağı</a></li>
-                    <li>
-                        <a href="burc-cosmos-beige.html" class="bg-secondary">Light Emperador</a>
-                    </li>
-                    <div class="header">
-                        <h5>Balıkesir White River</h5>
-                    </div>
-                    <li><a href="white-river-soon.html" class="bg-dark">White River Ocağı</a></li>
-                    <li>
-                        <a href="white-river-soon.html" class="bg-secondary">White River</a>
-                    </li>
-                </ul>
             </div>
 
             <div class="col-sm-9">
 
-                <div class="card-group cols-1">
-                    <div class="card border-white" style="width: 48%;">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col-md-6">
                         <figure class="figure">
                             <img src="img/Elmalı Cloudy Beige Blocks-1.jpg" class="figure-img img-fluid rounded shadow" alt="...">
-                            <a data-fslightbox="gallery" href="img/Elmalı Cloudy Beige Blocks-1.jpg">
+                            <a data-fslightbox="gallery" href="img/Elmalı Cloudy Beige Slabs-1.jpg">
                                 Cloudy Beige Blocks
                             </a>
                         </figure>
                     </div>
 
-                    <div class="card border-white" style="width: 48%;">
+                    <div class="col-md-6">
                         <figure class="figure">
-                            <img src="img/Elmalı Cloudy Beige Slabs-1.jpg" class="figure-img img-fluid rounded shadow" alt="...">
-                            <a data-fslightbox="gallery" href="img/Elmalı Cloudy Beige Slabs-1.jpg">
+                            <img src="img/Elmalı Baiyulan SLaps-1.jpg" class="figure-img img-fluid rounded shadow" alt="...">
+                            <a data-fslightbox="gallery" href="img/Elmalı Baiyulan SLaps-1.jpg">
                                 Cloudy Beige Slabs
-                        </a>
+                            </a>
                         </figure>
                     </div>
                 </div>
@@ -511,160 +506,108 @@
                 <br>
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
-                        <div class="card">
-                            <div class="card border-white" style="width: 100%;">
-                                <figure class="figure">
-                                    <img src="img/Elmalı Cloudy Beige Blocks-2.jpg" class="figure-img img-fluid rounded shadow" alt="...">
-                                    <a data-fslightbox="gallery" href="img/Elmalı Cloudy Beige Blocks-2.jpg">
+                        <figure class="figure">
+                            <img src="img/Elmalı Cloudy Beige Blocks-2.jpg" class="figure-img img-fluid rounded shadow" alt="...">
+                            <a data-fslightbox="gallery" href="img/Elmalı Cloudy Beige Slabs-2.jpg">
+                                Cloudy Beige Blocks
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="col">
+                        <figure class="figure">
+                            <img src="img/Elmalı Cloudy Beige Blocks-3.jpg" class="figure-img img-fluid rounded shadow" alt="...">
+                            <a data-fslightbox="gallery" href="img/Elmalı Cloudy Beige Slabs-3.jpg">
+                                Cloudy Beige Blocks
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="col">
+                        <figure class="figure">
+                            <img src="img/Elmalı Cloudy Beige Blocks-4.jpg" class="figure-img img-fluid rounded shadow" alt="...">
+                            <a data-fslightbox="gallery" href="img/Elmalı Cloudy Beige Blocks-4.jpg">
                                         Cloudy Beige Blocks
                                     </a>
-                                </figure>
-                            </div>
-                        </div>
+                        </figure>
                     </div>
                     <div class="col">
-                        <div class="card">
-                            <div class="card border-white" style="width: 100%;">
-                                <figure class="figure">
-                                    <img src="img/Elmalı Cloudy Beige Blocks-3.jpg" class="figure-img img-fluid rounded shadow" alt="...">
-                                    <a data-fslightbox="gallery" href="img/Elmalı Cloudy Beige Blocks-3.jpg">
+                        <figure class="figure">
+                            <img src="img/Elmalı Cloudy Beige Blocks-5.jpg" class="figure-img img-fluid rounded shadow" alt="...">
+                            <a data-fslightbox="gallery" href="img/Elmalı Cloudy Beige Blocks-5.jpg">
                                         Cloudy Beige Blocks
                                     </a>
-                                </figure>
-                            </div>
-                        </div>
+                        </figure>
                     </div>
                     <div class="col">
-                        <div class="card">
-                            <div class="card border-white" style="width: 100%;">
-                                <figure class="figure">
-                                    <img src="img/Elmalı Cloudy Beige Blocks-4.jpg" class="figure-img img-fluid rounded shadow" alt="...">
-                                    <a data-fslightbox="gallery" href="img/Elmalı Cloudy Beige Blocks-4.jpg">
+                        <figure class="figure">
+                            <img src="img/Elmalı Cloudy Beige Blocks-6.jpg" class="figure-img img-fluid rounded shadow" alt="...">
+                            <a data-fslightbox="gallery" href="img/Elmalı Cloudy Beige Blocks-6.jpg">
                                         Cloudy Beige Blocks
                                     </a>
-                                </figure>
-                            </div>
-                        </div>
+                        </figure>
                     </div>
                     <div class="col">
-                        <div class="card">
-                            <div class="card border-white" style="width: 100%;">
-                                <figure class="figure">
-                                    <img src="img/Elmalı Cloudy Beige Blocks-5.jpg" class="figure-img img-fluid rounded shadow" alt="...">
-                                    <a data-fslightbox="gallery" href="img/Elmalı Cloudy Beige Blocks-5.jpg">
+                        <figure class="figure">
+                            <img src="img/Elmalı Cloudy Beige Blocks-7.jpg" class="figure-img img-fluid rounded shadow" alt="...">
+                            <a data-fslightbox="gallery" href="img/Elmalı Cloudy Beige Blocks-7.jpg">
                                         Cloudy Beige Blocks
                                     </a>
-                                </figure>
-                            </div>
-                        </div>
+                        </figure>
                     </div>
                     <div class="col">
-                        <div class="card">
-                            <div class="card border-white" style="width: 100%;">
-                                <figure class="figure">
-                                    <img src="img/Elmalı Cloudy Beige Blocks-6.jpg" class="figure-img img-fluid rounded shadow" alt="...">
-                                    <a data-fslightbox="gallery" href="img/Elmalı Cloudy Beige Blocks-6.jpg">
-                                        Cloudy Beige Blocks
-                                    </a>
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="card border-white" style="width: 100%;">
-                                <figure class="figure">
-                                    <img src="img/Elmalı Cloudy Beige Blocks-7.jpg" class="figure-img img-fluid rounded shadow" alt="...">
-                                    <a data-fslightbox="gallery" href="img/Elmalı Cloudy Beige Blocks-7.jpg">
-                                        Cloudy Beige Blocks
-                                    </a>
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="card border-white" style="width: 100%;">
-                                <figure class="figure">
-                                    <img src="img/Elmalı Cloudy Beige Slabs-2.jpg" class="figure-img img-fluid rounded shadow" alt="...">
-                                    <a data-fslightbox="gallery" href="img/Elmalı Cloudy Beige Slabs-2.jpg">
+                        <figure class="figure">
+                            <img src="img/Elmalı Cloudy Beige Slabs-2.jpg" class="figure-img img-fluid rounded shadow" alt="...">
+                            <a data-fslightbox="gallery" href="img/Elmalı Cloudy Beige Slabs-2.jpg">
                                         Cloudy Beige Slabs
                                     </a>
-                                </figure>
-                            </div>
-                        </div>
+                        </figure>
                     </div>
                     <div class="col">
-                        <div class="card">
-                            <div class="card border-white" style="width: 100%;">
-                                <figure class="figure">
-                                    <img src="img/Elmalı Cloudy Beige Slabs-3.jpg" class="figure-img img-fluid rounded shadow" alt="...">
-                                    <a data-fslightbox="gallery" href="img/Elmalı Cloudy Beige Slabs-3.jpg">
+                        <figure class="figure">
+                            <img src="img/Elmalı Cloudy Beige Slabs-3.jpg" class="figure-img img-fluid rounded shadow" alt="...">
+                            <a data-fslightbox="gallery" href="img/Elmalı Cloudy Beige Slabs-3.jpg">
                                         Cloudy Beige Slabs
                                     </a>
-                                </figure>
-                            </div>
-                        </div>
+                        </figure>
                     </div>
                     <div class="col">
-                        <div class="card">
-                            <div class="card border-white" style="width: 100%;">
-                                <figure class="figure">
-                                    <img src="img/Elmalı Cloudy Beige Slabs-4.jpg" class="figure-img img-fluid rounded shadow" alt="...">
-                                    <a data-fslightbox="gallery" href="img/Elmalı Cloudy Beige Slabs-4.jpg">
+                        <figure class="figure">
+                            <img src="img/Elmalı Cloudy Beige Slabs-4.jpg" class="figure-img img-fluid rounded shadow" alt="...">
+                            <a data-fslightbox="gallery" href="img/Elmalı Cloudy Beige Slabs-4.jpg">
                                         Cloudy Beige Slabs
                                     </a>
-                                </figure>
-                            </div>
-                        </div>
+                        </figure>
                     </div>
                     <div class="col">
-                        <div class="card">
-                            <div class="card border-white" style="width: 100%;">
-                                <figure class="figure">
-                                    <img src="img/Elmalı Cloudy Beige Slabs-5.jpg" class="figure-img img-fluid rounded shadow" alt="...">
-                                    <a data-fslightbox="gallery" href="img/Elmalı Cloudy Beige Slabs-5.jpg">
+                        <figure class="figure">
+                            <img src="img/Elmalı Cloudy Beige Slabs-5.jpg" class="figure-img img-fluid rounded shadow" alt="...">
+                            <a data-fslightbox="gallery" href="img/Elmalı Cloudy Beige Slabs-5.jpg">
                                         Cloudy Beige Slabs
                                     </a>
-                                </figure>
-                            </div>
-                        </div>
+                        </figure>
                     </div>
                     <div class="col">
-                        <div class="card">
-                            <div class="card border-white" style="width: 100%;">
-                                <figure class="figure">
-                                    <img src="img/Elmalı Cloudy Beige Slabs-6.jpg" class="figure-img img-fluid rounded shadow" alt="...">
-                                    <a data-fslightbox="gallery" href="img/Elmalı Cloudy Beige Slabs-6.jpg">
+                        <figure class="figure">
+                            <img src="img/Elmalı Cloudy Beige Slabs-6.jpg" class="figure-img img-fluid rounded shadow" alt="...">
+                            <a data-fslightbox="gallery" href="img/Elmalı Cloudy Beige Slabs-6.jpg">
                                         Cloudy Beige Slabs
                                     </a>
-                                </figure>
-                            </div>
-                        </div>
+                        </figure>
                     </div>
                     <div class="col">
-                        <div class="card">
-                            <div class="card border-white" style="width: 100%;">
-                                <figure class="figure">
-                                    <img src="img/Elmalı Cloudy Beige Slabs-7.jpg" class="figure-img img-fluid rounded shadow" alt="...">
-                                    <a data-fslightbox="gallery" href="img/Elmalı Cloudy Beige Slabs-7.jpg">
+                        <figure class="figure">
+                            <img src="img/Elmalı Cloudy Beige Slabs-7.jpg" class="figure-img img-fluid rounded shadow" alt="...">
+                            <a data-fslightbox="gallery" href="img/Elmalı Cloudy Beige Slabs-7.jpg">
                                         Cloudy Beige Slabs
                                     </a>
-                                </figure>
-                            </div>
-                        </div>
+                        </figure>
                     </div>
                     <div class="col">
-                        <div class="card">
-                            <div class="card border-white" style="width: 100%;">
-                                <figure class="figure">
-                                    <img src="img/Elmalı Cloudy Beige Slabs-8.jpg" class="figure-img img-fluid rounded shadow" alt="...">
-                                    <a data-fslightbox="gallery" href="img/Elmalı Cloudy Beige Slabs-8.jpg">
+                        <figure class="figure">
+                            <img src="img/Elmalı Cloudy Beige Slabs-8.jpg" class="figure-img img-fluid rounded shadow" alt="...">
+                            <a data-fslightbox="gallery" href="img/Elmalı Cloudy Beige Slabs-8.jpg">
                                         Cloudy Beige Slabs
                                     </a>
-                                </figure>
-                            </div>
-                        </div>
+                        </figure>
                     </div>
                 </div>
             </div>
@@ -674,41 +617,41 @@
 
     <!-- Footer Başlangıç-->
 
-    <footer class="footer-bg">
-        <div class="container">
-            <div class="footer-upper">
-                <div class="row">
-                    <div class="col-sm-12 col-md-12 col-lg-5">
-                        <div class="footer-content-item">
+    <footer class="footer-bg ">
+        <div class="container ">
+            <div class="footer-upper ">
+                <div class="row ">
+                    <div class="col-sm-12 col-md-12 col-lg-5 ">
+                        <div class="footer-content-item ">
 
-                            <div class="footer-details">
-                                <div class="footer-logo">
+                            <div class="footer-details ">
+                                <div class="footer-logo ">
                                     <!-- <link >
-                                    <img src="img/dag iconu.png" alt="logo" />
+                                    <img src="img/dag iconu.png " alt="logo " />
                                     </link> -->
                                 </div>
-                                <ul class="footer-details footer-list">
+                                <ul class="footer-details footer-list ">
                                     <h3>MOCA Stone</h3>
                                     <hr>
 
                                     <p>
-                                        Moca Marble Industry Trade. Ltd. Şti, our ultimate goal is; <br> to deliver the marble blocks produced by our other companies to you reliably and quickly without sacrificing quality... </p>
+                                        Moca Mermer Sanayi Tic. Ltd. Şti olarak nihai hedefimiz ;<br> diğer firmalarımızın üretmiş olduğu mermer blokları kaliteden ödün vermeden güvenilir ve hızlı bir şekilde sizlere ulaştırmaktır... </p>
                                 </ul>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="footer-content-list footer-content-item">
+                    <div class="col-sm-6 col-md-4 col-lg-3 ">
+                        <div class="footer-content-list footer-content-item ">
 
-                            <ul class="footer-details footer-list">
-                                <h3>Company</h3>
+                            <ul class="footer-details footer-list ">
+                                <h3>Kurumsal</h3>
                                 <hr>
-                                <li><a href="index.html" style="text-decoration: none">Ana Sayfa</a></li>
-                                <li><a href="hakkimizda.html" style="text-decoration: none">Hakkımızda</a></li>
-                                <li><a href="ocaklarimiz.html" style="text-decoration: none">Ocaklarımız</a></li>
-                                <li><a href="urunlerimiz.html" style="text-decoration: none">Ürünlerimiz</a></li>
-                                <li><a href="iletisim.html" style="text-decoration: none">İletişim</a></li>
+                                <li><a href="index.html " style="text-decoration: none ">Ana Sayfa</a></li>
+                                <li><a href="hakkimizda.html " style="text-decoration: none ">Hakkımızda</a></li>
+                                <li><a href="ocaklarimiz.html " style="text-decoration: none ">Ocaklarımız</a></li>
+                                <li><a href="urunlerimiz.html " style="text-decoration: none ">Ürünlerimiz</a></li>
+                                <li><a href="iletisim.html " style="text-decoration: none ">İletişim</a></li>
                             </ul>
                         </div>
                     </div>
@@ -716,30 +659,27 @@
                     <div class="col-sm-6 col-md-4 col-lg-4">
                         <div class="footer-content-list footer-content-item">
                             <ul class="footer-details footer-list">
-                                <h3>Address</h3>
+                                <h3>Adres</h3>
                                 <hr>
                                 <li>
-                                    Address:
-                                    <span>Esentepe Mah. 1.Gaye Sok. Doruk-Olgu Apt. No:2<br><br>Osmangazi/BURSA</span>
+                                    Adres:
+                                    <span>Esentepe Mah. 1.Gaye Sok. Doruk-Olgu Apt. No:2 16130 <br><br>Osmangazi / BURSA /TÜRKİYE</span>
                                 </li>
                                 <li>
-                                    Message:
+                                    Mail:
                                     <span>
-                        <a href="/cdn-cgi/l/email-protection#96fff8f0f9d6f7fafff7b8f5f9fb">
-                          <span
-                            class="__cf_email__"
-                            data-cfemail="224b4c444d62434e4b430c414d4f"
-                          >
-                            [email&#160;protected]
-                          </span>
+                                    <a href="/cdn-cgi/l/email-protection#96fff8f0f9d6f7fafff7b8f5f9fb">
+                                        <span class="__cf_email__" data-cfemail="224b4c444d62434e4b430c414d4f">
+                                        bilgi@mocastone.com.tr
+                                        </span>
                                     </a>
                                     </span>
                                 </li>
                                 <li>
-                                    Phone:
+                                    Tel:
                                     <span>
-                        <a href="tel:(+90)2242493435">(+90) 224 249 34 35</a>
-                      </span>
+                                      <a href="tel:(+90)2242493435">(+90) 224 249 34 35</a>
+                                    </span>
                                 </li>
                             </ul>
                         </div>
@@ -747,42 +687,41 @@
                 </div>
             </div>
 
-            <div class="footer-lower">
+            <div class="footer-lower ">
 
-                <div class="footer-lower-item footer-copyright-text">
+                <div class="footer-lower-item footer-copyright-text ">
                     <p>
                         Tüm Hakları Saklıdır | MOCA Stone ©2022
-                        <a href="https://mocastone.com" target="_blank">
+                        <a href="https://bilgi@mocastone.com.tr " target="_blank ">
                             <br></br>Moca Stone
                         </a>
                     </p>
                 </div>
 
-                <div class="footer-lower-item footer-social-logo">
-                    <ul class="footer-social-list">
-                        <li class="social-btn social-btn-fb">
-                            <a href="https://www.facebook.com/" target="_blank">
-                                <i class="fab fa-facebook"></i>
+                <div class="footer-lower-item footer-social-logo ">
+                    <ul class="footer-social-list ">
+                        <li class="social-btn social-btn-fb ">
+                            <a href="https://www.facebook.com/surkay.marble" target="_blank ">
+                                <i class="fab fa-facebook "></i>
                             </a>
                         </li>
-                        <li class="social-btn social-btn-wc">
-                            <a href="https://www.wechat.com/tr/" target="_blank">
-                                <i class="fa fa-wechat"></i>
+                        <li class="social-btn social-btn-yt ">
+                            <a href="https://www.youtube.com/channel/UCpKorXDwqZ1ak4Ccf0ziDYA" target="_blank ">
+                                <i class="fab fa-youtube "></i>
                             </a>
                         </li>
-                        <li class="social-btn social-btn-gog">
-                            <a href="https://www.google.com.tr/?hl=tr" target="_blank">
-                                <i class="fab fa-google"></i>
+                        <li class="social-btn social-btn-wc ">
+                            <a href="https://www.wechat.com/tr/ " target="_blank ">
+                                <i class="fa fa-wechat "></i>
                             </a>
                         </li>
-                        <li class="social-btn social-btn-yt">
-                            <a href="https://www.youtube.com.tr/" target="_blank">
-                                <i class="fab fa-youtube"></i>
+                        <li class="social-btn social-btn-gog ">
+                            <a href="https://www.google.com.tr/?hl=tr " target="_blank ">
+                                <i class="fab fa-google "></i>
                             </a>
                         </li>
                     </ul>
                 </div>
-
             </div>
         </div>
     </footer>
@@ -790,26 +729,26 @@
     <!-- Footer Bitiş-->
 
     <!-- Optional JavaScript; choose one of the two! -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="fslightbox.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+    <script src="fslightbox.js "></script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js " integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js " integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13 " crossorigin="anonymous "></script>
 </body>
 
 </html>
 
 
 <!-- Create links 
-            <a data-fslightbox="gallery" href="https://i.imgur.com/fsyrScY.jpg">
+            <a data-fslightbox="gallery " href="https://i.imgur.com/fsyrScY.jpg ">
             Image
             </a>
-            <a data-fslightbox="gallery" href="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+            <a data-fslightbox="gallery " href="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4 ">
             Video
             </a>
-            <a data-fslightbox="gallery" href="https://www.youtube.com/watch?v=3nQNiWdeH2Q">
+            <a data-fslightbox="gallery " href="https://www.youtube.com/watch?v=3nQNiWdeH2Q ">
             Youtube
             </a>
 -->
