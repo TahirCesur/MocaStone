@@ -15,7 +15,7 @@
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .bgblue {
@@ -83,11 +83,17 @@ body {
     opacity: 0.8;
 }
 
+.galeri {
+    background-color: #f2f2f2;
+}
+
 .figure:hover {
     opacity: 0.8;
 }
 
-
+.card-header {
+    border-bottom: 1px solid #fbfbfb !important;
+}
 /***** FOOTER *****/
 
 .footer-bg {
@@ -270,19 +276,22 @@ body {
     justify-content: center;
 }
 
-.iletisim .card-group {
+.iletisim.card-group.card {
     border-radius: 3px;
-    border-color: white;
+    border: 3px solid black;
 }
 
-
+.ocaklarimiz a:hover {
+    background-color: white !important;
+    color: black !important;
+    font-size: 15px;
+    border-radius: 3px;
+}
 /******/
 
 .wrapper {
     display: flex;
 }
-
-
 /* Kredi menüsünün aktif menü olduğunu göstermek amacıyla arka plan rengini değiştirdik. Ayrıca sigorta menüsüne de tıkladığımızda arka plan rengini değiştirdik. */
 
 #sidebar ul li.active>a,
@@ -290,11 +299,9 @@ a[aria-expanded="true"] {
     color: #fff;
     background: #616263;
 }
-
-
 /* Sayfa genişliği 768 px ve daha aşağı değerlerde olduğunda sidebar menüyü ve butonda bulunan yazıyı kaldırdık. */
 
-@media (max-width: 768px) {
+@media (max-width:768px) {
     #sidebar {
         margin-left: -250px;
     }
@@ -305,8 +312,6 @@ a[aria-expanded="true"] {
         display: none;
     }
 }
-
-
 /*********************/
 
 .figure-img {
@@ -333,10 +338,10 @@ a[aria-expanded="true"] {
     color: #fff;
 }
 
-.sidebar-navigation li a:hover {
+.sidebar-navigation li a:active,
+.sidebar-navigation li a:hover,
+.sidebar-navigation li a:focus {
     text-decoration: none;
-    color: black;
-    background-color: blue;
 }
 
 .sidebar-navigation .header {
@@ -348,11 +353,26 @@ a[aria-expanded="true"] {
 
 .sidebar-header h5 {
     font-size: 25px;
-    background-color: black;
+    background-color: #151515;
     color: white;
     padding: 10px 10px 10px 10px;
 }
 
 .content-container {
     padding-left: 200px;
+}
+.carousel-inner h6,
+.carousel-inner p{
+    color:#151515;
+    font-weight: bolder;
+    
+}
+.carousel-inner p{
+    font-size: 14px;
+    text-align: center;
+}
+.slider h3 {
+    text-shadow: 4px 3px 2px rgb(255, 255, 255);
+    color : black;
+    font-size: xx-large;
 }
