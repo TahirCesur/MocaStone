@@ -26,6 +26,7 @@
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
+            color: white !important;
         }
         
         @media (max-width: 477px) {
@@ -111,9 +112,6 @@
             background-color: #f2f2f2;
         }
         
-        .figure:hover {
-            opacity: 0.8;
-        }
         
         .card-header {
             border-bottom: 1px solid #fbfbfb !important;
@@ -175,14 +173,15 @@
         
         .footer-list li a {
             color: #e1e6f2;
+            text-decoration: none;
         }
         
         .footer-list li span {
-            color: #cadafe;
+            color:rgb(134, 128, 128);
         }
         
         .footer-list li span a {
-            color: #cadafe;
+            color:rgb(134, 128, 128);
         }
         
         .footer-list li:last-child {
@@ -206,6 +205,11 @@
         
         .footer-lower-item {
             padding: 10px 0;
+            text-decoration: none;
+        }
+
+        .footer-lower-item a{
+            text-decoration: none;
         }
         
         .footer-copyright-text p {
@@ -216,6 +220,7 @@
         .footer-copyright-text p a {
             color: #fff;
             text-decoration: underline;
+            text-align: center;
         }
         
         .footer-social-list {
@@ -266,40 +271,35 @@
             transform: translateY(-3px);
         }
         
-        .social-btn.social-btn-fb a {
-            background: #3b5998;
-            color: #fff;
-        }
-        
-        .social-btn.social-btn-wc a {
-            background: #039139;
-            color: #fff;
-        }
-        
-        .social-btn.social-btn-ins a {
-            background: #3f729b;
-            color: #fff;
-        }
-        
-        .social-btn.social-btn-gog a {
-            background: red;
-            color: #fff;
-        }
-        
-        .social-btn.social-btn-yt a {
-            background: #c80000;
-            color: #fff;
-        }
-        
-        .social-btn.social-btn-ld a {
-            background: #2867b2;
-            color: #fff;
-        }
-        
         .form-group .btn {
             justify-content: center;
         }
-        
+
+        footer .footerdesc {
+            color: #666;
+        }
+
+        footer .social a {
+            color: white;
+            display: block;
+            font-size: 18px;
+            line-height: 34px;
+            width: 35px;
+            height: 35px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            border-radius: 50%;
+            background-color: #b2b2b2;
+	        text-align:center;
+	        transition:500ms;
+        }
+        footer .social a:hover {
+	        background-color : #6b615a!important;
+            color:white!important;
+        }
+
         .iletisim.card-group.card {
             border-radius: 3px;
             border: 3px solid black;
@@ -321,7 +321,6 @@
         #sidebar ul li.active>a,
         a[aria-expanded="true"] {
             color: #fff;
-            background: #616263;
         }
         /* Sayfa genişliği 768 px ve daha aşağı değerlerde olduğunda sidebar menüyü ve butonda bulunan yazıyı kaldırdık. */
         
@@ -337,10 +336,19 @@
             }
         }
         /*********************/
-        
+        .figure:hover {
+            opacity: 0.8;
+        }
+
+        .figure a{
+            text-decoration: none;
+            color:#050505;
+        }
+
         .figure-img {
             width: 100%;
             height: 100%;
+            text-decoration: none;
         }
         
         .sidebar-navigation {
@@ -385,15 +393,75 @@
         .content-container {
             padding-left: 200px;
         }
-    </style>
-    <script src="https://kit.fontawesome.com/e2ae435918.js" crossorigin="anonymous"></script>
+        .carousel-inner h6,
+        .carousel-inner p{
+            color:#151515;
+            font-weight: bolder;
+            
+        }
+        .carousel-inner p{
+            font-size: 14px;
+            text-align: center;
+        }
+        .slider h3 {
+            text-shadow: 4px 3px 2px rgb(255, 255, 255);
+            color : black;
+            font-size: xx-large;
+        }
 
-    <title> MOCA | Stone </title>
+        .contact .list-inline-item a{
+            font-size: 16px;
+            text-shadow: 3px 3px 2px rgb(0, 0, 0);
+            color: #ffffff!important;
+            color: var(--bs-nav-link-color);
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            color : #6b615a!important;
+        }
+
+        .navbar-nav a{
+            color: white !important;
+        }
+
+        .navbar-nav a:hover{
+            color : #6b615a!important;
+        }
+
+        .footer-details a {
+            color: #666;
+            font-size: 14px;
+            line-height: 25px;
+            transition: all 0.45s cubic-bezier(0.165,0.84,0.44,1) 0s;
+        }
+        
+        .footer-details a:hover {
+            padding-left:10px;
+            color:#666;
+        }
+
+        .dropdown-menu .dropdown-item{
+            background-color: #303133;
+            color: white !important;
+        }
+        .dropdown-menu .dropdown-item:hover{
+            background-color: white;
+            color : #050505!important;
+        }
+    </style>
+   
+
+    <title> MOCA Stone </title>
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KPG5PXT"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-        <!-- Menü Kısmı Başlangıç-->
+    <!-- Menü Kısmı Başlangıç-->
     <!-- navbar-light bg-light olan yeri navbar-dark bg-dark olarak yeniledik-->
     <!-- navbar-dark bg-dark yanına da fixed-top eklersek sticky sabit olur-->
 
@@ -419,7 +487,7 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProfil" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="ocaklarimiz.html" id="navbarDropdownProfil" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Ocaklarımız
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownProfil">
@@ -440,10 +508,33 @@
 
                 </ul>
             </div>
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Ara" aria-label="Search">
-                <button class="btn btn-outline-info" type="submit">Arama</button>
-            </form>
+            
+            <div class="contact text-center text-lg-end">
+				<ul class="list-inline mb-0">
+				  <li class="list-inline-item ">
+					<span>
+						<a  class="text" href="tel:(+90)2242493435"><i class="fa fa-mobile"></i>&nbsp; (+90) 224 249 3435</a>
+					</span>
+				  </li>
+				 
+                  <li class="list-inline-item">
+                    <a href="https://www.facebook.com/surkay.marble" target="_blank ">
+                        <i class="fab fa-facebook "></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://www.youtube.com/channel/UCpKorXDwqZ1ak4Ccf0ziDYA" target="_blank ">
+                        <i class="fab fa-youtube "></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://www.google.com.tr/?hl=tr " target="_blank ">
+                        <i class="fab fa-google "></i>
+                    </a>
+                  </li>
+				</ul>
+			</div>
+
         </div>
     </nav>
 
@@ -561,113 +652,111 @@
 
     <!-- Ocaklarımız Bitiş-->
 
-    <!-- Footer Başlangıç-->
+<!-- Footer Başlangıç-->
 
-    <footer class="footer-bg ">
-        <div class="container ">
-            <div class="footer-upper ">
-                <div class="row ">
-                    <div class="col-sm-12 col-md-12 col-lg-5 ">
-                        <div class="footer-content-item ">
+<footer class="footer-bg">
+    <div class="container ">
+        <div class="footer-upper ">
+            <div class="row ">
+                <div class="col-sm-12 col-md-12 col-lg-5 ">
+                    <div class="footer-content-item ">
 
-                            <div class="footer-details ">
-                                <div class="footer-logo ">
-                                    <!-- <link >
-                                    <img src="img/dag iconu.png " alt="logo " />
-                                    </link> -->
-                                </div>
-                                <ul class="footer-details footer-list ">
-                                    <h3>MOCA Stone</h3>
-                                    <hr>
-
-                                    <p>
-                                        Moca Mermer Sanayi Tic. Ltd. Şti olarak nihai hedefimiz ;<br> diğer firmalarımızın üretmiş olduğu mermer blokları kaliteden ödün vermeden güvenilir ve hızlı bir şekilde sizlere ulaştırmaktır... </p>
-                                </ul>
+                        <div class="footer-details ">
+                            <div class="footer-logo ">
+                                <!-- <link >
+                                <img src="img/dag iconu.png " alt="logo " />
+                                </link> -->
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-md-4 col-lg-3 ">
-                        <div class="footer-content-list footer-content-item ">
-
                             <ul class="footer-details footer-list ">
-                                <h3>Kurumsal</h3>
+                                <h3>MOCA Stone</h3>
                                 <hr>
-                                <li><a href="index.html " style="text-decoration: none ">Ana Sayfa</a></li>
-                                <li><a href="hakkimizda.html " style="text-decoration: none ">Hakkımızda</a></li>
-                                <li><a href="ocaklarimiz.html " style="text-decoration: none ">Ocaklarımız</a></li>
-                                <li><a href="urunlerimiz.html " style="text-decoration: none ">Ürünlerimiz</a></li>
-                                <li><a href="iletisim.html " style="text-decoration: none ">İletişim</a></li>
-                            </ul>
-                        </div>
-                    </div>
 
-                    <div class="col-sm-6 col-md-4 col-lg-4">
-                        <div class="footer-content-list footer-content-item">
-                            <ul class="footer-details footer-list">
-                                <h3>Adres</h3>
-                                <hr>
-                                <li>
-                                    Adres:
-                                    <span>Esentepe Mah. 1.Gaye Sok. Doruk-Olgu Apt. No:2 16130 <br><br>Osmangazi / BURSA /TÜRKİYE</span>
-                                </li>
-                                <li>
-                                    Mail:
-                                    <span>
-                                    <a href="/cdn-cgi/l/email-protection#96fff8f0f9d6f7fafff7b8f5f9fb">
-                                        <span class="__cf_email__" data-cfemail="224b4c444d62434e4b430c414d4f">
-                                        bilgi@mocastone.com.tr
-                                        </span>
-                                    </a>
-                                    </span>
-                                </li>
-                                <li>
-                                    Tel:
-                                    <span>
-                                      <a href="tel:(+90)2242493435">(+90) 224 249 34 35</a>
-                                    </span>
-                                </li>
+                                <p>
+                                    Moca Mermer Sanayi Tic. Ltd. Şti olarak nihai hedefimiz ;<br> diğer firmalarımızın üretmiş olduğu mermer blokları kaliteden ödün vermeden güvenilir ve hızlı bir şekilde sizlere ulaştırmaktır... </p>
                             </ul>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="footer-lower ">
+                <div class="col-sm-6 col-md-4 col-lg-3 ">
+                    <div class="footer-content-list footer-content-item ">
 
-                <div class="footer-lower-item footer-copyright-text ">
-                    <p>
-                        Tüm Hakları Saklıdır | MOCA Stone ©2022
-                        <a href="https://bilgi@mocastone.com.tr " target="_blank ">
-                            <br></br>Moca Stone
-                        </a>
-                    </p>
+                        <ul class="footer-details footer-list ">
+                            <h3>Kurumsal</h3>
+                            <hr>
+                            <li><a href="index.html " style="text-decoration: none ">Ana Sayfa</a></li>
+                            <li><a href="hakkimizda.html " style="text-decoration: none ">Hakkımızda</a></li>
+                            <li><a href="ocaklarimiz.html " style="text-decoration: none ">Ocaklarımız</a></li>
+                            <li><a href="urunlerimiz.html " style="text-decoration: none ">Ürünlerimiz</a></li>
+                            <li><a href="iletisim.html " style="text-decoration: none ">İletişim</a></li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="footer-lower-item footer-social-logo ">
-                    <ul class="footer-social-list ">
-                        <li class="social-btn social-btn-fb ">
-                            <a href="https://www.facebook.com/surkay.marble" target="_blank ">
-                                <i class="fab fa-facebook "></i>
-                            </a>
-                        </li>
-                        <li class="social-btn social-btn-yt ">
-                            <a href="https://www.youtube.com/channel/UCpKorXDwqZ1ak4Ccf0ziDYA" target="_blank ">
-                                <i class="fab fa-youtube "></i>
-                            </a>
-                        </li>
-                        <li class="social-btn social-btn-gog ">
-                            <a href="https://www.google.com.tr/?hl=tr " target="_blank ">
-                                <i class="fab fa-google "></i>
-                            </a>
-                        </li>
-                    </ul>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="footer-content-list footer-content-item">
+                        <ul class="footer-details footer-list">
+                            <h3>Adres</h3>
+                            <hr>
+                            <li>
+                                Adres :
+                                <span>Esentepe Mah. 1.Gaye Sok. Doruk-Olgu Apt. No:2 16130 <br><br>Osmangazi / BURSA /TÜRKİYE</span>
+                            </li>
+                            <li>
+                                Mail :
+                                <span>
+                                <a href="/cdn-cgi/l/email-protection#96fff8f0f9d6f7fafff7b8f5f9fb">
+                                    <span class="__cf_email__" data-cfemail="224b4c444d62434e4b430c414d4f">
+                                    bilgi@mocastone.com.tr
+                                    </span>
+                                </a>
+                                </span>
+                            </li>
+                            <li>
+                                Tel:
+                                <span>
+                                  <a href="tel:(+90)2242493435">(+90) 224 249 34 35</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </footer>
 
-    <!-- Footer Bitiş-->
+        <div class="footer-lower ">
+
+            <div class="footer-lower-item footer-copyright-text ">
+                <p class="text-align-center">
+                    Tüm Hakları Saklıdır | MOCA Stone ©2022
+                </p>
+            </div>
+
+            <div class="social">
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="https://www.facebook.com/surkay.marble" target="_blank ">
+                            <i class="fab fa-facebook "></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="https://www.youtube.com/channel/UCpKorXDwqZ1ak4Ccf0ziDYA" target="_blank ">
+                            <i class="fab fa-youtube "></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="https://www.google.com.tr/?hl=tr " target="_blank ">
+                            <i class="fab fa-google "></i>
+                        </a>
+                      </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<!-- Footer Bitiş-->
 
     <!--Js Dosyaları Ekleme-->
 <script src="js/jquery-3.6.0.min.js"></script>
